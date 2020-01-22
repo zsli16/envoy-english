@@ -1,0 +1,33 @@
+[
+  {
+    "level": "C2",
+    "title": "Master",
+    "description": "You can express yourself spontaneously, very fluently, and precisely."
+  },
+  {
+    "level": "C1",
+    "title": "Expert",
+    "description": "You can use language flexibly and effectively in a wide range of complicated situations."
+  },
+  {
+    "level": "B2",
+    "title": "Ambassador",
+    "description": "You can interact easily with native speakers on most topics."
+  },
+  {
+    "level": "B1",
+    "title": "Messenger",
+    "description": "You can communicate messages about daily activities and solve problems."
+  },
+  {
+    "level": "A2",
+    "title": "Pioneer",
+    "description": "You can communicate to complete simple, routine tasks."
+  },
+  {
+    "level": "A1",
+    "title": "Novice",
+    "description": "You can use basic phrases to introduce yourself and ask simple questions"
+  }
+]
+  

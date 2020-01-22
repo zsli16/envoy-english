@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Navbar, Grid, Cell} from '../styles/layout';
+import {Container, Grid, Cell} from '../styles/layout';
 import {Button} from '../styles/ui-components';
 
 class Missions extends Component {

@@ -1,11 +1,22 @@
 import React, {Component} from 'react';
-import {Container, Row} from '../styles/layout';
 import {Link} from 'react-router-dom'
-import {Button} from '../styles/ui-components';
+
+//styles
+import {Container, ColoredContainer, Row} from '../styles/layout';
+import {Button, Circle, LevelDescription, Tube} from '../styles/ui-components';
+
+//content
+import Levels from '../content/levels.json';
+
+//images
+import mockConvo from '../assets/MockConvo.png';
+import mockObstacle from '../assets/MockObstacle.png';
+import mockLevelUp from '../assets/MockLevelUp.png';
 
 class LandingPage extends Component {
   render() {
     return (
+      <>
       <Container>
         <h1>Welcome to Envoy English</h1>
         <h2>We launch your English to the next level</h2>
@@ -17,6 +28,57 @@ class LandingPage extends Component {
           <Button primary><Link to="/missions">Start Now</Link></Button>
         </Row>
       </Container>
+      <ColoredContainer>
+        <h1>Our Curriculum</h1>
+        <Row>Envoy English uses digital immersion and interactive challenges to improve your English. Each Mission is designed to increase your level of fluency, coherency, interaction, and range of expression, as defined by the internationally recognized Common European Framework of Reference for Languages (CEFR). </Row>
+        <Container style={{'alignItems': 'flex-start'}}>
+          {Levels.map((l, i) => {
+            return <Tube key={i}>
+              <Circle className="circle">{l.level}</Circle>
+              <LevelDescription>
+                <div style={{'fontWeight': 'bolder', 'fontFamily': 'Exo, sans-serif'}}>{l.title}</div> 
+                <p>{l.description}</p>
+              </LevelDescription>
+            </Tube>
+          })}
+        </Container>
+      </ColoredContainer>
+      <Container>
+        <h1>How It Works</h1>
+        <Row>The best way to master a language is to immerse yourself in real-life situations, which often requires traveling abroad. With Envoy English, you can now practice speaking English at your level without leaving your home. Each Mission requires you to learn specific vocabulary, phrases, and strategies. You will then use what you’ve learned to communicate with your teammates and complete a challenge.</Row>
+        <Row left tall>
+          <img src={mockConvo} alt="chat"/>
+          <div>
+            <h2>Prepare for Your Mission</h2>
+            <h3>Study Your Mission Briefing to Learn Key Phrases and Vocabulary</h3>
+            <p>Your Mission Briefing contains the words, phrases, and information crucial to your success. Prepare to use these new phrases in your upcoming Mission, and you’ll sound like a native English speaker in no time! </p>
+          </div>
+        </Row>
+        <Row right tall>
+          <div>
+            <h2>Overcome Obstacles</h2>
+            <h3>Use Your Language Skills to Solve Problems with Your Teammates</h3>
+            <p>No one said the Mission would be easy. In order to succeed, you must use all of your English communication skills and the new vocabulary you have learned. You will have to work closely with your teammates to complete each challenge by uncovering clues, asking questions, and agreeing upon a course of action. Your native English instructor will guide you along the way, but the success of the Mission depends on you.</p>
+          </div>
+          <img src={mockObstacle} alt="obstacles"/>
+        </Row>
+        <Row left tall>
+          <img src={mockLevelUp} alt="levels" />
+          <div>
+            <h2>Mission Accomplished!</h2>
+            <h3>Elevate Your Language Skills</h3>
+            <p>Each Mission is designed to increase your English speaking level. After the course, your instructor will send you personalized feedback with tips on how to keep improving. As you master the language, you will unlock higher level Missions. Are you up for the challenge?</p>
+          </div>
+        </Row>
+      </Container>
+      <ColoredContainer>
+        <h1>Gain Confidence in English</h1>
+        <Row>Do you struggle to express yourself in English? Have you had communication problems with international coworkers? <br/> Join a Mission today to gain the confidence you need to succeed in your personal and professional goals.</Row>
+        <Row>
+          <h3>Learn more about Envoy English</h3>
+        </Row>
+      </ColoredContainer>
+      </>
     );
   }
 };

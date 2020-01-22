@@ -29,3 +29,43 @@ export const Logo = styled.p`
   font-size: 24px;
   flex: auto;
 `;
+
+export const Tube = styled.div`
+  color: black;
+  background: white;
+  border: black 2px solid;
+  border-radius: 45px;
+  padding: 10px;
+  margin-bottom: .5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+
+  :hover {
+    & .circle {
+      background-color: ${primary};
+      color: white;
+    }
+  }
+`;
+
+export const LevelDescription = styled.div`
+  text-align: left;
+  padding-left: 2em;
+`;
+
+export const Circle = styled.div`
+  border: ${primary} 6px solid;
+  border-radius: 45px;
+  padding: 2px;
+  width: 2em;
+  height: 2em;
+  color: ${primary};
+  font-size: 24px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  font-weight: 600;
+  font-family: 'Exo', sans-serif;
+`;
