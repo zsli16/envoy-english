@@ -10,10 +10,25 @@ export const Button = styled.button`
   color: ${primary};
   margin: 0.5em 1em;
   padding: 1em 1.5em;
+  cursor: pointer;
+
+  a {
+    color: ${primary};
+  }
+
+  :hover {
+    cursor: pointer;
+    background: ${primary};
+    color: white;
+  }
 
   ${props => props.primary && css`
     background: ${primary};
     color: white;
+
+    a {
+      color: white;
+    }
   `}
 
   ${props => props.signup && css`

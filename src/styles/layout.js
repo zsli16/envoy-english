@@ -13,12 +13,18 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3em 8em;
+  padding: 3em 8em 5em;
+
+  ${props => props.hero && css`
+    padding-bottom: 9em;
+  `}
+
 `;
 
 export const ColoredContainer = styled(Container)`
   background: ${primary};
   color: white;
+  padding-bottom: 0;
 `;
 
 export const Grid = styled.div`
@@ -30,29 +36,31 @@ export const Grid = styled.div`
 
 export const Cell = styled.div`
   height: 18em;
-  width: 13em;
+  width: 14em;
   border: ${primary} 4px solid;
-  padding: 30px 25px 20px;
+  padding: 30px 20px;
   margin: 0 10px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 `;
 
 export const Row = styled.div`
-  width: 85%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   text-align: center;
   margin: 1em 0;
   justify-content: center;
+  font-size: 1em;
 
   img {
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     width: 100%;
-    margin: 0 2em;
+    margin: 0 1.5em;
   }
 
   ${props => props.left && css`
