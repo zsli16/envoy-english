@@ -19,6 +19,7 @@ import mockLevelUp from '../assets/MockLevelUp.png';
 class LandingPage extends Component {
   render() {
     const missionExamples = Missions.slice(0,3);
+    const formUrl = 'https://www.cognitoforms.com/AgaveCommerce/EnvoyEnglishBetaApplication';
 
     return (
       <>
@@ -30,7 +31,7 @@ class LandingPage extends Component {
         </Row>
         <Row>
           <HashLink to="/#how-it-works"><Button>How it works</Button></HashLink>
-          <Link to="/missions"><Button primary>Start Now</Button></Link>
+          <a target='_blank' href={formUrl}><Button primary>Start Now</Button></a>
         </Row>
       </Container>
       <Container id="how-it-works">
@@ -89,7 +90,7 @@ class LandingPage extends Component {
               </div>
               <div>
                 <p>Available for: {mission.levels}</p>
-                <Button>Join Mission</Button>
+                <a target='_blank' href={formUrl}><Button>Join Mission</Button></a>
               </div>
             </Cell>
           })
