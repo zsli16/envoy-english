@@ -10,7 +10,7 @@ const iconStyle = {
   'backgroundColor': `${primary}`,
   'color': 'white',
   'padding': '.5em',
-  'border-radius': '45px',
+  'borderRadius': '45px',
   'margin': '.25em',
 };
 
@@ -25,7 +25,7 @@ class Header extends Component {
           <FontAwesomeIcon color={primary} style={iconStyle} size="2x" icon={faRocket}/>
         </Link>
         <Logo>Envoy Education</Logo>
-        {!auth && <a target='_blank' href={formUrl}><Button primary>Sign up</Button></a>}
+        {!auth && <a target='_blank' rel="noopener noreferrer" href={formUrl}><Button primary>Sign up</Button></a>}
       </Navbar>
     );
   }

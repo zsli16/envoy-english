@@ -31,7 +31,7 @@ class LandingPage extends Component {
         </Row>
         <Row>
           <HashLink to="/#how-it-works"><Button>How it works</Button></HashLink>
-          <a target='_blank' href={formUrl}><Button primary>Start Now</Button></a>
+          <a target='_blank' rel="noopener noreferrer" href={formUrl}><Button primary>Start Now</Button></a>
         </Row>
       </Container>
       <Container id="how-it-works">
@@ -86,15 +86,15 @@ class LandingPage extends Component {
         </Row>
         <Grid>
         {
-          missionExamples.map(mission => {
-            return <Cell>
+          missionExamples.map((mission, i) => {
+            return <Cell key={i}>
               <div>
                 <h4>{mission.title}</h4>
                 <h5>{mission.subtitle}</h5>
               </div>
               <div>
                 <p>Available for: {mission.levels}</p>
-                <a target='_blank' href={formUrl}><Button>Join Mission</Button></a>
+                <a rel="noopener noreferrer" target='_blank' href={formUrl}><Button>Join Mission</Button></a>
               </div>
             </Cell>
           })

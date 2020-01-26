@@ -11,13 +11,6 @@ export const Button = styled.button`
   padding: 1em 1.5em;
   cursor: pointer;
 
-  @media only screen and (min-width: 320px) and (max-width: 425px) {
-    padding: .5em 1em;
-    margin: .5em;
-  }
-
-
-
   a {
     color: ${primary};
   }

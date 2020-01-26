@@ -4,12 +4,10 @@ import HubspotForm from 'react-hubspot-form';
 class EmailForm extends Component {
 
   setForm() {
-    console.log('FORM HAS LOADED')
     const iframe = document.getElementsByTagName('iframe')[0];
     const window = iframe.contentWindow || iframe.contentDocument;
     if (window) {
       const document = window.document;
-      console.log('document', document)
     }
   }
 
