@@ -19,7 +19,6 @@ import missioncompleted from '../assets/missioncompleted.png';
 class LandingPage extends Component {
   render() {
     const missionExamples = Missions.slice(0,3);
-    const formUrl = 'https://www.cognitoforms.com/AgaveCommerce/EnvoyEnglishBetaApplication';
 
     return (
       <>
@@ -31,7 +30,7 @@ class LandingPage extends Component {
         </Row>
         <Row>
           <HashLink to="/#how-it-works"><Button>How it works</Button></HashLink>
-          <a target='_blank' rel="noopener noreferrer" href={formUrl}><Button primary>Start Now</Button></a>
+          <Link to='/apply'><Button primary>Start Now</Button></Link>
         </Row>
       </Container>
       <Container id="how-it-works">
@@ -94,7 +93,7 @@ class LandingPage extends Component {
               </div>
               <div>
                 <p>Available for: {mission.levels}</p>
-                <a rel="noopener noreferrer" target='_blank' href={formUrl}><Button>Join Mission</Button></a>
+                <Link to='/apply'><Button>Join Mission</Button></Link>
               </div>
             </Cell>
           })

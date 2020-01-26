@@ -13,8 +13,6 @@ const iconStyle = {
   'margin': '.25em',
 };
 
-const formUrl = 'https://www.cognitoforms.com/AgaveCommerce/EnvoyEnglishBetaApplication';
-
 class Header extends Component {
   render() {
     const {auth} = this.props;
@@ -24,7 +22,7 @@ class Header extends Component {
           <FontAwesomeIcon color={primary} style={iconStyle} size="2x" icon={faRocket}/>
         </Link>
         <Logo>Envoy Education</Logo>
-        {!auth && <a target='_blank' rel="noopener noreferrer" href={formUrl}><Button primary>Sign up</Button></a>}
+        {!auth && <Link to='/apply'><Button primary>Sign up</Button></Link>}
       </Navbar>
     );
   }

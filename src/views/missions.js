@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import {Container, Grid, Cell} from '../styles/layout';
 import {Button} from '../styles/ui-components';
 
@@ -22,7 +23,7 @@ class Missions extends Component {
                 </div>
                 <div>
                   <p>Available for: {mission.levels}</p>
-                  <Button primary>Join Mission</Button>
+                  <Link to='/apply'><Button primary>Join Mission</Button></Link>
                 </div>
               </Cell>
             })

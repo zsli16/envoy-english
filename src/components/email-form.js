@@ -14,7 +14,7 @@ class EmailForm extends Component {
     };
 
     return(
-      <iframe src="https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=37" style={style} />
+      <iframe src="https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=37" title='email-form' style={style} />
     );
   }
 }

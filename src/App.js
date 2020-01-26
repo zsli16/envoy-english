@@ -4,6 +4,7 @@ import {Route, Switch, Redirect} from 'react-router-dom';
 import Header from './components/header';
 import LandingPage from './views/landing';
 import Missions from './views/missions';
+import Application from './views/apply';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={LandingPage}/>
         <Route path='/missions' component={Missions}/>
+        <Route path='/apply' component={Application}/>
         <Redirect to='/'/>
       </Switch>
     </div>
