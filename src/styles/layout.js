@@ -29,14 +29,11 @@ export const Container = styled.div`
 
   @media only screen and (min-width: 320px) and (max-width: 425px) {
     padding: 1em;
-    padding-top: .5em;
 
     ${props => props.hero && css`
       padding-bottom: 9em;
     `}
   }
-
-
 `;
 
 export const ColoredContainer = styled(Container)`
@@ -113,12 +110,18 @@ export const Row = styled.div`
   @media only screen and (min-width: 320px) and (max-width: 425px) {
     flex-direction: column;
     align-items: center;
-    align-self: flex-start;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
 
     img {
       width: 100%;
       flex: 0 0 auto;
     }
 
+    ${props => props.right && css`
+      flex-direction: column-reverse;
+      align-self: flex-start;
+    `}
   }
 `;

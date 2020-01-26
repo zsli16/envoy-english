@@ -65,7 +65,7 @@ class LandingPage extends Component {
       <ColoredContainer>
         <h1>Our Curriculum</h1>
         <Row>Envoy English uses digital immersion and interactive challenges to improve your English. Each Mission is designed to increase your level of fluency, coherency, interaction, and range of expression, as defined by the internationally recognized Common European Framework of Reference for Languages (CEFR). </Row>
-        <Container style={{'alignItems': 'flex-start'}}>
+        <Container>
           {Levels.map((l, i) => {
             return <Tube key={i}>
               <Circle className="circle">{l.level}</Circle>

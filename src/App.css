@@ -499,6 +499,10 @@
     text-align: center;
   }
 
+  h3 {
+    font-size: 1.3em;
+  }
+
   #hero-description {
     font-size: 1em;
   }
