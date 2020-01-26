@@ -1,13 +1,6 @@
 import styled, {css} from 'styled-components';
 import {primary} from '../styles/colors';
 
-export const Navbar = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5% 3%;
-`;
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;

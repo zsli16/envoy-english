@@ -508,4 +508,7 @@
   }
 }
 
+.cognito .c-iframe .c-safari .c-lrg {
+  max-width: none;
+}
 

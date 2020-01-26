@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
-import EmailForm from '../components/hubspot-form';
+import EmailForm from '../components/email-form';
 
 //styles
 import {Container, ColoredContainer, Row, Cell, Grid} from '../styles/layout';
@@ -14,7 +14,7 @@ import Missions from '../content/missions.json';
 //images
 import convo from '../assets/videocall.png';
 import obstacle from '../assets/obstacle.png';
-import mockLevelUp from '../assets/MockLevelUp.png';
+import missioncompleted from '../assets/missioncompleted.png';
 
 class LandingPage extends Component {
   render() {
@@ -54,7 +54,7 @@ class LandingPage extends Component {
           <img src={obstacle} alt="obstacles"/>
         </Row>
         <Row left tall>
-          <img src={mockLevelUp} alt="levels" />
+          <img src={missioncompleted} alt="levels" />
           <div>
             <h3>Mission Accomplished!</h3>
             <h4>Elevate Your Language Skills</h4>

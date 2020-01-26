@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Navbar} from '../styles/layout';
-import {Button, Logo} from '../styles/ui-components';
+import {Button, Logo, Navbar} from '../styles/ui-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket } from '@fortawesome/free-solid-svg-icons';
 import {primary} from '../styles/colors';

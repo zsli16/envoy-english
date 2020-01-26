@@ -37,6 +37,13 @@ export const Button = styled.button`
   `}
 `;
 
+export const Navbar = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+`;
+
 export const Logo = styled.p`
   font-family: 'Exo', sans-serif;
   font-weight: 800;
