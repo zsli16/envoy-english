@@ -1,7 +1,6 @@
 import styled, {css} from 'styled-components';
 import {primary} from './colors';
 
-
 export const Button = styled.button`
   background: transparent;
   border-radius: 4px;
@@ -11,6 +10,13 @@ export const Button = styled.button`
   margin: 0.5em 1em;
   padding: 1em 1.5em;
   cursor: pointer;
+
+  @media only screen and (min-width: 320px) and (max-width: 425px) {
+    padding: .5em 1em;
+    margin: .5em;
+  }
+
+
 
   a {
     color: ${primary};
@@ -41,8 +47,12 @@ export const Button = styled.button`
 export const Logo = styled.p`
   font-family: 'Exo', sans-serif;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 1.5em;
   flex: auto;
+
+  @media only screen and (min-width: 320px) and (max-width: 425px) {
+    display: none;
+  }
 `;
 
 export const Tube = styled.div`
@@ -74,8 +84,8 @@ export const Circle = styled.div`
   border: ${primary} 6px solid;
   border-radius: 45px;
   padding: 2px;
-  width: 2em;
-  height: 2em;
+  min-width: 2em;
+  min-height: auto;
   color: ${primary};
   font-size: 24px;
   text-align: center;

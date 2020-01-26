@@ -5,7 +5,7 @@ export const Navbar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 45px;
+  padding: 5% 3%;
 `;
 
 export const Container = styled.div`
@@ -13,11 +13,29 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3em 8em 5em;
+  padding: 3em 5% 5em;
 
   ${props => props.hero && css`
     padding-bottom: 9em;
   `}
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    padding: 3em;
+
+    ${props => props.hero && css`
+      padding-bottom: 9em;
+    `}
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 425px) {
+    padding: 1em;
+    padding-top: .5em;
+
+    ${props => props.hero && css`
+      padding-bottom: 9em;
+    `}
+  }
+
 
 `;
 
@@ -32,6 +50,7 @@ export const Grid = styled.div`
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 40px;
+  justify-content: center;
 `;
 
 export const Cell = styled.div`
@@ -55,23 +74,29 @@ export const Row = styled.div`
   margin: 1em 0;
   justify-content: center;
   font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  align-items: flex-start;
 
   img {
-    max-width: 500px;
+    flex: 0 2 400px;
+    width: 50%;
     height: auto;
-    width: 100%;
     margin: 0 1.5em;
+    vertical-align: middle;
+  }
+
+  div {
+    flex: 0 3 auto;
   }
 
   ${props => props.left && css`
-    align-items: flex-start;
     align-self: flex-start;
     text-align: left;
     justify-content: space-around;
   `}
 
   ${props => props.right && css`
-    align-items: flex-end;
     align-self: flex-end;
     text-align: right;
     justify-content: space-around;
@@ -80,4 +105,20 @@ export const Row = styled.div`
   ${props => props.tall && css`
     margin: 3em 0;
   `}
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    margin: 1.5em 0;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 425px) {
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+
+    img {
+      width: 100%;
+      flex: 0 0 auto;
+    }
+
+  }
 `;

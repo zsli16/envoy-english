@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:500,800|Open+Sans&display=swap');
-
   /* http://meyerweb.com/eric/tools/css/reset/
   v2.0-modified | 20110126
   License: none (public domain)
@@ -354,7 +353,8 @@
   }
   
   img {
-      vertical-align: middle;
+    vertical-align: middle;
+    max-width: 100%;
   }
   
   fieldset {
@@ -374,47 +374,134 @@
       padding: 0.2em 0;
   }
 
-    /**
-   * START GLOBAL STYLES
-   */
+/**
+* START GLOBAL STYLES
+*/
+  p {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+  }
 
   h1 {
-    font-size: 48px;
     font-family: 'Exo', sans-serif;
     font-weight: 900;
     text-align: center;
   }
 
   h2 {
-    font-size: 36px;
     font-family: 'Exo', sans-serif;
     font-weight: 500;
   }
 
   h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 100;
+    font-family: 'Exo', sans-serif;
+    font-weight: 300;
   }
 
   h4 {
     font-family: 'Exo', sans-serif;
-    font-size: 18px;
     font-weight: 600;
     margin: 1em 0;
   }
 
   h5 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
     font-weight: 100;
     margin: 1em 0;
   }
 
-  p {
-    font-size: 1em;
+  #hero-description {
+    font-size: 1.3em;
+    align-self: auto;
   }
 
-  a {
-    text-decoration: none;
+@media only screen and (min-width: 1024px) {
+  /* body {
+    background-color: seagreen;
+  } */
+
+  h1 {
+    font-size: 3em;
   }
+
+  h2 {
+    font-size: 2.3em;
+  }
+
+  h3 {
+    font-size: 1.8em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  h5 {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* body {
+    background-color: lightseagreen;
+  } */
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  /* body {
+    background-color: lightpink;
+  } */
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  #hero-description {
+    font-size: 1.1em;
+    align-self: auto;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  /* body {
+    background-color: lightgoldenrodyellow;
+  } */
+
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  #hero-description {
+    font-size: 1em;
+  }
+}
+
+

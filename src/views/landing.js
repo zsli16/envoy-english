@@ -27,7 +27,7 @@ class LandingPage extends Component {
         <h1>Welcome to Envoy English</h1>
         <h2>Our Mission: Elevate Your English</h2>
         <Row>
-          <h3>Improve your English conversation skills through live, interactive courses online. Each class features a Mission where you practice speaking in real-life simulations to overcome challenges.</h3>
+          <p id="hero-description">Improve your English conversation skills through live, interactive courses online. Each class features a Mission where you practice speaking in real-life simulations to overcome challenges.</p>
         </Row>
         <Row>
           <HashLink to="/#how-it-works"><Button>How it works</Button></HashLink>
@@ -40,14 +40,14 @@ class LandingPage extends Component {
         <Row left tall>
           <img src={convo} alt="chat"/>
           <div>
-            <h2>Prepare for Your Mission</h2>
+            <h3>Prepare for Your Mission</h3>
             <h4>Study Your Mission Briefing to Learn Key Phrases and Vocabulary</h4>
             <p>Your Mission Briefing contains the words, phrases, and information crucial to your success. Prepare to use these new phrases in your upcoming Mission, and you’ll sound like a native English speaker in no time! </p>
           </div>
         </Row>
         <Row right tall>
           <div>
-            <h2>Overcome Obstacles</h2>
+            <h3>Overcome Obstacles</h3>
             <h4>Use Your Language Skills to Solve Problems with Your Teammates</h4>
             <p>No one said the Mission would be easy. In order to succeed, you must use all of your English communication skills and the new vocabulary you have learned. You will have to work closely with your teammates to complete each challenge by uncovering clues, asking questions, and agreeing upon a course of action. Your native English instructor will guide you along the way, but the success of the Mission depends on you.</p>
           </div>
@@ -56,7 +56,7 @@ class LandingPage extends Component {
         <Row left tall>
           <img src={mockLevelUp} alt="levels" />
           <div>
-            <h2>Mission Accomplished!</h2>
+            <h3>Mission Accomplished!</h3>
             <h4>Elevate Your Language Skills</h4>
             <p>Each Mission is designed to increase your English speaking level. After the course, your instructor will send you personalized feedback with tips on how to keep improving. As you master the language, you will unlock higher level Missions. Are you up for the challenge?</p>
           </div>
@@ -70,7 +70,7 @@ class LandingPage extends Component {
             return <Tube key={i}>
               <Circle className="circle">{l.level}</Circle>
               <LevelDescription>
-                <div style={{'fontWeight': 'bolder', 'fontFamily': 'Exo, sans-serif'}}>{l.title}</div> 
+                <p style={{'fontWeight': '600', 'fontFamily': 'Exo, sans-serif'}}>{l.title}</p> 
                 <p>{l.description}</p>
               </LevelDescription>
             </Tube>
@@ -79,7 +79,11 @@ class LandingPage extends Component {
       </ColoredContainer>
       <Container>
         <h1>Upcoming English Speaking Missions</h1>
-        <Row>Ready to embark on your English speaking journey? Enroll in an upcoming Mission for free. We match you to a team with your right language level.</Row>
+        <Row>
+          <p>
+            Ready to embark on your English speaking journey? Enroll in an upcoming Mission for free. We match you to a team with your right language level.
+          </p>
+        </Row>
         <Grid>
         {
           missionExamples.map(mission => {
@@ -102,7 +106,7 @@ class LandingPage extends Component {
       </Container>
       <ColoredContainer>
         <h1>Gain Confidence in English</h1>
-        <Row>Do you struggle to express yourself in English? Have you had communication problems with international coworkers? <br/> Join a Mission today to gain the confidence you need to succeed in your personal and professional goals.</Row>
+        <Row>Do you struggle to express yourself in English? Have you had communication problems with international coworkers? Join a Mission today to gain the confidence you need to succeed in your personal and professional goals.</Row>
         <Row>
           <EmailForm/>
         </Row>
