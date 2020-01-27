@@ -37,6 +37,7 @@ class Application extends Component {
           scrolling='yes'
           frameBorder='0'
           seamless='seamless'
+          title='application'
           style={style}/>
       </Container>
       </>
