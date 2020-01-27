@@ -11,6 +11,8 @@ class Missions extends Component {
 
 
     return (
+      <>
+      <Link to='/apply'><Button style={{'position': 'absolute', 'top': '3%', 'right': '3%'}} primary>Sign up</Button></Link>
       <Container>
         <h2>English Speaking Missions</h2>
         <Grid>
@@ -37,6 +39,7 @@ class Missions extends Component {
           </Cell>
         </Grid>
       </Container>
+      </>
     );
   }
 };

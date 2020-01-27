@@ -22,6 +22,7 @@ class LandingPage extends Component {
 
     return (
       <>
+      <Link to='/apply'><Button style={{'position': 'absolute', 'top': '3%', 'right': '3%'}} primary>Sign up</Button></Link>
       <Container hero>
         <h1>Welcome to Envoy English</h1>
         <h2>Our Mission: Elevate Your English</h2>
@@ -48,7 +49,7 @@ class LandingPage extends Component {
           <div>
             <h3>Overcome Obstacles</h3>
             <h4>Use Your Language Skills to Solve Problems with Your Teammates</h4>
-            <p>No one said the Mission would be easy. In order to succeed, you must use all of your English communication skills and the new vocabulary you have learned. You will have to work closely with your teammates to complete each challenge by uncovering clues, asking questions, and agreeing upon a course of action. Your native English instructor will guide you along the way, but the success of the Mission depends on you.</p>
+            <p>In order to succeed, you must use all of your English communication skills and the new vocabulary you have learned. You will have to work closely with your teammates to complete each challenge by uncovering clues, asking questions, and agreeing upon a course of action. Your native English instructor will guide you along the way, but the success of the Mission depends on you.</p>
           </div>
           <img src={obstacle} alt="obstacles"/>
         </Row>

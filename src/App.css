@@ -508,7 +508,18 @@
   }
 }
 
-.cognito .c-iframe .c-safari .c-lrg {
-  max-width: none;
+#down-arrow {
+  animation: pulse 1s infinite;
 }
 
+@keyframes pulse {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(0, -15px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
