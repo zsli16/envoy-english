@@ -4,7 +4,7 @@ import {HashLink} from 'react-router-hash-link';
 import EmailForm from '../components/email-form';
 
 //styles
-import {Container, ColoredContainer, Row, Cell, Grid} from '../styles/layout';
+import {Container, ColoredContainer, Footer, Row, Cell, Grid} from '../styles/layout';
 import {Button, Circle, LevelDescription, Tube} from '../styles/ui-components';
 
 //content
@@ -15,6 +15,10 @@ import Missions from '../content/missions.json';
 import convo from '../assets/videocall.png';
 import obstacle from '../assets/obstacle.png';
 import missioncompleted from '../assets/missioncompleted.png';
+
+//icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
 class LandingPage extends Component {
   render() {
@@ -111,6 +115,11 @@ class LandingPage extends Component {
           <EmailForm/>
         </Row>
       </ColoredContainer>
+      <Footer>
+        <h4>Contact Us</h4>
+        <p><span><FontAwesomeIcon color='white' size="1x" icon={faPhoneAlt}/></span>  +52 55 8421 9934 (Whatsapp)</p>
+        <p><span><FontAwesomeIcon color='white' size="1x" icon={faEnvelope}/></span>  hello@envoyenglish.com</p>
+      </Footer>
       </>
     );
   }

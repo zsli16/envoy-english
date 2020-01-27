@@ -35,6 +35,16 @@ export const ColoredContainer = styled(Container)`
   padding-bottom: 0;
 `;
 
+export const Footer = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1em 5% 2em;
+  background: black;
+  color: white;
+  justify-content: flex-start;
+`;
+
 export const Grid = styled.div`
   display: flex;
   flex-wrap: wrap;
