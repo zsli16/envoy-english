@@ -94,3 +94,16 @@ export const Circle = styled.div`
   font-weight: 600;
   font-family: 'Exo', sans-serif;
 `;
+
+export const StyledEmailForm = styled.iframe`
+  position: relative;
+  min-width: 100%;
+  height: 185px;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 5%;
+  @media only screen and (max-width: 512px) {
+      height: 304px;
+    }
+  }
+`;
