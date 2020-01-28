@@ -39,10 +39,15 @@ export const Footer = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 1em 5% 2em;
+  padding: 1em 5% 3em;
   background: black;
   color: white;
   justify-content: flex-start;
+
+  @media only screen and (max-width: 768px) {
+    padding-left: 2em;
+    padding-bottom: 2em;
+  }
 `;
 
 export const Grid = styled.div`

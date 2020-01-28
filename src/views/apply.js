@@ -1,19 +1,12 @@
 import React, {Component} from 'react';
 import {Container, Row} from '../styles/layout';
+import {StyledApplicationForm} from '../styles/ui-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import {HashLink} from 'react-router-hash-link';
 
 class Application extends Component {
   render() {
-    
-    const style = {
-      'position': 'relative',
-      'minWidth':'100%',
-      'height': 1880,
-      'width': '100%',
-      'overflow': 'hidden'
-    };
 
     return (
       <>
@@ -32,13 +25,13 @@ class Application extends Component {
       </Container>
       <Container id="application">
         <h4>Application for English Course</h4>
-        <iframe 
+        <StyledApplicationForm 
           src="https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=36"
           scrolling='yes'
           frameBorder='0'
           seamless='seamless'
           title='application'
-          style={style}/>
+        />
       </Container>
       </>
     );
