@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/landing-page/static/css/main.3c8c8001.chunk.css",
+    "main.js": "/landing-page/static/js/main.1a813b37.chunk.js",
+    "main.js.map": "/landing-page/static/js/main.1a813b37.chunk.js.map",
+    "runtime-main.js": "/landing-page/static/js/runtime-main.e982c3ce.js",
+    "runtime-main.js.map": "/landing-page/static/js/runtime-main.e982c3ce.js.map",
+    "static/js/2.daa21d46.chunk.js": "/landing-page/static/js/2.daa21d46.chunk.js",
+    "static/js/2.daa21d46.chunk.js.map": "/landing-page/static/js/2.daa21d46.chunk.js.map",
+    "index.html": "/landing-page/index.html",
+    "precache-manifest.11398f9af3217e17d8569a5ef8696963.js": "/landing-page/precache-manifest.11398f9af3217e17d8569a5ef8696963.js",
+    "service-worker.js": "/landing-page/service-worker.js",
+    "static/css/main.3c8c8001.chunk.css.map": "/landing-page/static/css/main.3c8c8001.chunk.css.map",
+    "static/js/2.daa21d46.chunk.js.LICENSE": "/landing-page/static/js/2.daa21d46.chunk.js.LICENSE",
+    "static/media/missioncompleted.png": "/landing-page/static/media/missioncompleted.9aa47dc5.png",
+    "static/media/obstacle.png": "/landing-page/static/media/obstacle.56c0e5b1.png",
+    "static/media/videocall.png": "/landing-page/static/media/videocall.c4ac95bd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e982c3ce.js",
+    "static/js/2.daa21d46.chunk.js",
+    "static/css/main.3c8c8001.chunk.css",
+    "static/js/main.1a813b37.chunk.js"
+  ]
+}
