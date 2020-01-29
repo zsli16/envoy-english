@@ -1,14 +1,18 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import {Container, Grid, Cell} from '../styles/layout';
+import { HashLink as Link } from 'react-router-hash-link';
+import {Container, Grid, Cell, Footer, Row, ColoredContainer} from '../styles/layout';
 import {Button} from '../styles/ui-components';
+import EmailForm from '../components/email-form';
 
 //content
 import missionData from '../content/missions.json';
 
+//icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+
 class Missions extends Component {
   render() {
-
 
     return (
       <>
@@ -35,10 +39,24 @@ class Missions extends Component {
               <h4>Request a mission</h4>
               <h5>Don't see an interesting topic for conversation here? Have a different language challenge in mind? Send us your ideas!</h5>
             </div>
-            <Button primary>Contact us</Button>
+            <Link to='#email-form'>
+              <Button primary>Contact us</Button>
+            </Link>
           </Cell>
         </Grid>
       </Container>
+      <ColoredContainer id="email-form">
+        <h1>Gain Confidence in English</h1>
+        <Row>Do you struggle to express yourself in English? Have you had communication problems with international coworkers? Join a Mission today to gain the confidence you need to succeed in your personal and professional goals.</Row>
+        <Row>
+          <EmailForm/>
+        </Row>
+      </ColoredContainer>
+      <Footer>
+        <h4>Contact Us</h4>
+        <p><span><FontAwesomeIcon color='white' size="1x" icon={faPhoneAlt}/></span>  +52 55 8421 9934 (Whatsapp)</p>
+        <p><span><FontAwesomeIcon color='white' size="1x" icon={faEnvelope}/></span>  hello@envoyenglish.com</p>
+      </Footer>
       </>
     );
   }
