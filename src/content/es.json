@@ -1,10 +1,10 @@
 {
   "Hero": {
-    "button1": "Cómo Funciona",
-    "button2": "Regístrate",
-    "description": "Mejora tus habilidades de conversación en inglés a través de cursos interactivos en vivo en línea. Cada clase presenta una Misión que requiere que superes retos y practiques hablar en un ambiente de la vida real.",
+    "title": "Bienvenido a Envoy English",
     "tagline": "Nuestra Misión: Elevar tu Inglés",
-    "title": "Bienvenido a Envoy English"
+    "button_1": "Cómo Funciona",
+    "button_2": "Regístrate",
+    "description": "Mejora tus habilidades de conversación en inglés a través de cursos interactivos en vivo en línea. Cada clase presenta una Misión que requiere que superes retos y practiques hablar en un ambiente de la vida real."
   },
   "HowItWorks": {
     "heading": "Cómo Funciona",
@@ -59,7 +59,7 @@
     "header": "Upcoming English Speaking Missions",
     "description": "Ready to embark on your English speaking journey? Enroll in an upcoming Mission for free. We match you to a team with your right language level.",
     "button_1": "Únete a la Misión",
-    "button_2": "Ver Más Misiones"
+    "button_2": "Ver Más Misiones",
   },
   "Missions": [
     {
