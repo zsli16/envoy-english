@@ -1,0 +1,110 @@
+{
+  "Hero": {
+    "header": "Welcome to Envoy English",
+    "tagline": "Our Mission: Elevate Your English",
+    "description": "Improve your English conversation skills through live, interactive courses online. Each class features a Mission where you practice speaking in real-life simulations to overcome challenges.",
+    "button_1": "How it works",
+    "button_2": "Start now"
+  },
+  "HowItWorks": {
+    "header": "How It Works",
+    "description": "The best way to master a language is to immerse yourself in real-life situations, which often requires traveling abroad. With Envoy English, you can now practice speaking English at your level without leaving your home. Each Mission requires you to learn specific vocabulary, phrases, and strategies. You will then use what you’ve learned to communicate with your teammates and complete a challenge.",
+    "section_header_1": "Prepare for Your Mission",
+    "section_tagline_1": "Study Your Mission Briefing to Learn Key Phrases and Vocabulary",
+    "section_description_1": "Your Mission Briefing contains the words, phrases, and information crucial to your success. Prepare to use these new phrases in your upcoming Mission, and you’ll sound like a native English speaker in no time!",
+    "section_header_2": "Overcome Obstacles",
+    "section_tagline_2": "Use Your Language Skills to Solve Problems with Your Teammates",
+    "section_description_2": "In order to succeed, you must use all of your English communication skills and the new vocabulary you have learned. You will have to work closely with your teammates to complete each challenge by uncovering clues, asking questions, and agreeing upon a course of action. Your native English instructor will guide you along the way, but the success of the Mission depends on you.",
+    "section_header_3": "Mission Accomplished!",
+    "section_tagline_3": "Elevate Your Language Skills",
+    "section_description_3": "Each Mission is designed to increase your English speaking level. After the course, your instructor will send you personalized feedback with tips on how to keep improving. As you master the language, you will unlock higher level Missions. Are you up for the challenge?"
+  },
+  "Curriculum": {
+    "header": "Our Curriculum",
+    "description": "Envoy English uses digital immersion and interactive challenges to improve your English. Each Mission is designed to increase your level of fluency, coherency, interaction, and range of expression, as defined by the internationally recognized Common European Framework of Reference for Languages (CEFR)."
+  },
+  "Levels": [
+    {
+      "level": "C2",
+      "title": "Master",
+      "description": "You can express yourself spontaneously, very fluently, and precisely."
+    },
+    {
+      "level": "C1",
+      "title": "Ninja",
+      "description": "You can use language flexibly and effectively in a wide range of complicated situations."
+    },
+    {
+      "level": "B2",
+      "title": "Ambassador",
+      "description": "You can interact easily with native speakers on most topics."
+    },
+    {
+      "level": "B1",
+      "title": "Messenger",
+      "description": "You can communicate messages about daily activities and solve problems."
+    },
+    {
+      "level": "A2",
+      "title": "Pioneer",
+      "description": "You can communicate to complete simple, routine tasks."
+    },
+    {
+      "level": "A1",
+      "title": "Novice",
+      "description": "You can use basic phrases to introduce yourself and ask simple questions"
+    }
+  ],
+  "UpcomingMissions": {
+    "header": "Upcoming English Speaking Missions",
+    "description": "Ready to embark on your English speaking journey? Enroll in an upcoming Mission for free. We match you to a team with your right language level.",
+    "button_1": "Join Mission",
+    "button_2": "View More Missions"
+  },
+  "Missions": [
+    {
+      "title": "Throwing a surprise party",
+      "subtitle": "Coming to a group decision",
+      "levels": "A2, B1, B2"
+    },
+    {
+      "title": "The awkward dinner party",
+      "subtitle": "Practicing your conversation table manners",
+      "levels": "A2, B1"
+    },
+    {
+      "title": "Getting lost in the city",
+      "subtitle": "Asking for directions",
+      "levels": "A1, A2, B1, B2"
+    },
+    {
+      "title": "You're going the wrong way!",
+      "subtitle": "Refuting the Uber driver",
+      "levels": "B1, B2"
+    },
+    {
+      "title": "Heavy accents",
+      "subtitle": "Deciphering English all around the world",
+      "levels": "B1, B2, C1"
+    },
+    {
+      "title": "The wrong reservation",
+      "subtitle": "Negotating with service representative",
+      "levels": "B2, C1, C2"
+    }
+  ],
+  "EmailForm": {
+    "header": "Gain Confidence in English",
+    "description": "Do you struggle to express yourself in English? Have you had communication problems with international coworkers? Join a Mission today to gain the confidence you need to succeed in your personal and professional goals."
+  },
+  "Contact": {
+    "header": "Contact Us"
+  },
+  "Application": {
+    "header": "Register for Our Beta Trial",
+    "tagline": "Find Your Level. Pick a Mission. Get Started!",
+    "description_1": "We are currently accepting applications for our Beta trial. To participate, please fill out the form below. This form will allow us to identify your English level and recommend Missions that are most suitable to you.",
+    "description_2": "All of our Beta missions are Free! The only requirements are a computer with a camera, microphone, and a strong internet connection. Ready? Get started below.",
+    "application_title": "Application for English Course"
+  }
+}

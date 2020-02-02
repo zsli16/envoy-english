@@ -3,26 +3,50 @@ import { HashLink as Link } from 'react-router-hash-link';
 import {Container, Grid, Cell, Footer, Row, ColoredContainer} from '../styles/layout';
 import {Button} from '../styles/ui-components';
 import EmailForm from '../components/email-form';
+import Header from '../components/header';
 
 //content
-import missionData from '../content/missions.json';
+import EN from '../content/en.json';
+import ES from '../content/es.json';
 
 //icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
+const translations = {EN, ES};
+
 class Missions extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      language: 'EN',
+      messages: EN
+    }
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    const lang = event.target.value;
+    this.setState({language: lang});
+    this.setState({messages: translations[lang]});
+  }
+
   render() {
+    const {messages} = this.state;
+    const missionExamples = messages.Missions;
 
     return (
       <>
-      <Link to='/apply'><Button style={{'position': 'absolute', 'top': '3%', 'right': '3%'}} primary>Sign up</Button></Link>
+      <Header 
+        handleChange={(e) => this.handleChange(e)}
+        buttonText={messages.Hero.button_2}
+      />
       <Container>
-        <h2>English Speaking Missions</h2>
+        <h2>{messages.UpcomingMissions.header}</h2>
         <Grid>
           {
-            missionData.map(mission => {
-              return <Cell>
+            missionExamples.map((mission, i) => {
+              return <Cell key={i}>
                 <div>
                   <h4>{mission.title}</h4>
                   <h5>{mission.subtitle}</h5>
@@ -45,15 +69,15 @@ class Missions extends Component {
           </Cell>
         </Grid>
       </Container>
-      <ColoredContainer id="email-form">
-        <h1>Gain Confidence in English</h1>
-        <Row>Do you struggle to express yourself in English? Have you had communication problems with international coworkers? Join a Mission today to gain the confidence you need to succeed in your personal and professional goals.</Row>
+      <ColoredContainer>
+        <h1>{messages.EmailForm.header}</h1>
+        <Row>{messages.EmailForm.description}</Row>
         <Row>
           <EmailForm/>
         </Row>
       </ColoredContainer>
       <Footer>
-        <h4>Contact Us</h4>
+        <h4>{messages.Contact.header}</h4>
         <p><span><FontAwesomeIcon color='white' size="1x" icon={faPhoneAlt}/></span>  +52 55 8421 9934 (Whatsapp)</p>
         <p><span><FontAwesomeIcon color='white' size="1x" icon={faEnvelope}/></span>  hello@envoyenglish.com</p>
       </Footer>

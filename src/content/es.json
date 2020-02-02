@@ -1,0 +1,110 @@
+{
+  "Hero": {
+    "title": "Bienvenido a Envoy English",
+    "tagline": "Nuestra Misión: Elevar tu Inglés",
+    "button_1": "Cómo Funciona",
+    "button_2": "Regístrate",
+    "description": "Mejora tus habilidades de conversación en inglés a través de cursos interactivos en vivo en línea. Cada clase presenta una Misión que requiere que superes retos y practiques hablar en un ambiente de la vida real."
+  },
+  "HowItWorks": {
+    "heading": "Cómo Funciona",
+    "description": "La mejor manera de dominar un idioma es sumergirse en situaciones de la vida real, que a menudo requiere viajar al extranjero. Con Envoy English, ahora puedes practicar hablar inglés a tu nivel sin salir de casa. Cada Misión requiere que aprendas vocabulario, frases, y estrategias específicas. Luego usarás lo que has aprendido para comunicarte con tus compañeros de equipo y superar un reto.",
+    "section_header_1": "Prepárate para tu Misión",
+    "section_tagline_1": "Estudia tu Informe de Misión para Aprender Frases Clave y Vocabulario",
+    "section_description_1": "Tu Informe de Misión contiene las palabras, frases, e información cruciales para tu éxito. Prepárate para usar estas nuevas frases en tu próxima Misión, y sonarás como un hablante nativo de inglés en poco tiempo.",
+    "section_header_2": "Supera los Obstaculos",
+    "section_tagline_2": "Usa tus Habilidades Lingüísticas para Resolver Problemas con tus Compañeros de Equipo",
+    "section_description_2": "Para tener éxito, debes usar todas tus habilidades de comunicación en inglés y el nuevo vocabulario que has aprendido. Tendrás que trabajar en equipo con tus compañeros para completar cada reto. Tendrán que descubrir pistas, hacer preguntas, y tomar decisiones. Tu instructor nativo de inglés guiará la sesión, pero el éxito de la Misión depende de ti.",
+    "section_header_3": "Misión cumplida!",
+    "section_tagline_3": "Eleva tus Habilidades Lingüísticas",
+    "section_description_3": "Cada Misión está diseñada para aumentar tu nivel de inglés. Después del curso, su instructor te enviará comentarios personalizados con consejos sobre cómo seguir mejorando. Mientras avances en el idioma, desbloquearás Misiones más complicadas. ¿Estás preparado para el reto?"
+  },
+  "Curriculum": {
+    "header": "Nuestro Plan de Estudios",
+    "description": "Envoy English utiliza inmersión digital y desafíos interactivos para mejorar tu inglés. Cada Misión está diseñada para aumentar su nivel de fluidez, coherencia, interacción, y rango de expresión, de acuerdo con las definiciones de nivel en el Marco de Referencia Común Europeo para las Lenguas (MCER), lo cual es reconocido internacionalmente."
+  },
+  "Levels": [
+    {
+      "level": "C2",
+      "title": "Master",
+      "description": "Puedes expresarte espontáneamente, con mucha fluidez y precisión."
+    },
+    {
+      "level": "C1",
+      "title": "Ninja",
+      "description": "Puedes usar el lenguaje de manera flexible y efectiva en una amplia gama de situaciones complicadas."
+    },
+    {
+      "level": "B2",
+      "title": "Ambassador",
+      "description": "Puedes interactuar fácilmente con hablantes nativos en la mayoría de los temas."
+    },
+    {
+      "level": "B1",
+      "title": "Messenger",
+      "description": "Puedes comunicar mensajes sobre actividades diarias y resolver problemas"
+    },
+    {
+      "level": "A2",
+      "title": "Pioneer",
+      "description": "Puedes comunicarte para completar tareas simples y rutinarias."
+    },
+    {
+      "level": "A1",
+      "title": "Novice",
+      "description": "Puedes usar frases básicas para presentarte y hacer preguntas simples."
+    }
+  ],
+  "UpcomingMissions": {
+    "header": "Upcoming English Speaking Missions",
+    "description": "Ready to embark on your English speaking journey? Enroll in an upcoming Mission for free. We match you to a team with your right language level.",
+    "button_1": "Únete a la Misión",
+    "button_2": "Ver Más Misiones"
+  },
+  "Missions": [
+    {
+      "title": "Throwing a surprise party",
+      "subtitle": "Coming to a group decision",
+      "levels": "A2, B1, B2"
+    },
+    {
+      "title": "The awkward dinner party",
+      "subtitle": "Practicing your conversation table manners",
+      "levels": "A2, B1"
+    },
+    {
+      "title": "Getting lost in the city",
+      "subtitle": "Asking for directions",
+      "levels": "A1, A2, B1, B2"
+    },
+    {
+      "title": "You're going the wrong way!",
+      "subtitle": "Refuting the Uber driver",
+      "levels": "B1, B2"
+    },
+    {
+      "title": "Heavy accents",
+      "subtitle": "Deciphering English all around the world",
+      "levels": "B1, B2, C1"
+    },
+    {
+      "title": "The wrong reservation",
+      "subtitle": "Negotating with service representative",
+      "levels": "B2, C1, C2"
+    }
+  ],
+  "EmailForm": {
+    "header": "Incrementa Tu Confianza en Inglés",
+    "description": "¿Te cuesta expresarte en inglés? ¿Has tenido problemas de comunicación con compañeros de trabajo internacionales? Únete a una Misión hoy para ganar la confianza que necesitas para tener éxito en tus objetivos personales y profesionales."
+  },
+  "Contact": {
+    "header": "Contact Us"
+  },
+  "Application": {
+    "header": "Regístrate para Nuestra Fase Beta",
+    "tagline": "Encuentra tu Nivel. Elige una Misión. ¡Comienza!",
+    "description_1": "Actualmente estamos aceptando solicitudes para nuestra fase beta. Para participar, sólo tienes que rellenar el siguiente formulario. Este formulario nos permitirá identificar tu nivel de inglés y recomendar las Misiones adecuadas para ti.",
+    "description_2": "¡Todas nuestras Misiones Beta son gratis! Los únicos requisitos son una computadora con cámara, micrófono y una buena conexión de internet.",
+    "application_title": "Application for English Course"
+  }  
+}
