@@ -8,8 +8,6 @@ import {Container, ColoredContainer, Footer, Row, Cell, Grid} from '../styles/la
 import {Button, Circle, LevelDescription, Tube} from '../styles/ui-components';
 
 //content
-import Levels from '../content/levels.json';
-import Missions from '../content/missions.json';
 import EN from '../content/en.json';
 import ES from '../content/es.json';
 
@@ -27,7 +25,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 
-const translations = {EN,ES};
+const translations = {EN, ES};
 
 class LandingPage extends Component {
 
@@ -47,8 +45,10 @@ class LandingPage extends Component {
   }
 
   render() {
-    const missionExamples = Missions.slice(0,3);
     const {messages} = this.state;
+    const missionExamples = messages.Missions;
+    const Levels = messages.Levels;
+    console.log('messages', messages)
 
     return (
       <>
@@ -68,8 +68,8 @@ class LandingPage extends Component {
           <p id="hero-description">{messages.Hero.description}</p>
         </Row>
         <Row>
-          <HashLink to="/#how-it-works"><Button>{messages.Hero.button1}</Button></HashLink>
-          <Link to='/apply'><Button primary>{messages.Hero.button2}</Button></Link>
+          <HashLink to="/#how-it-works"><Button>{messages.Hero.button_1}</Button></HashLink>
+          <Link to='/apply'><Button primary>{messages.Hero.button_2}</Button></Link>
         </Row>
       </Container>
       <Container id="how-it-works">
