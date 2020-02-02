@@ -56,40 +56,40 @@
     }
   ],
   "UpcomingMissions": {
-    "header": "Upcoming English Speaking Missions",
-    "description": "Ready to embark on your English speaking journey? Enroll in an upcoming Mission for free. We match you to a team with your right language level.",
+    "header": "Próximas Misiones",
+    "description": "¿Listo para empezar tu aventura en inglés? Inscríbete en una Misión de forma gratuita. Te colocaremos con un equipo de tu mismo nivel.",
     "button_1": "Únete a la Misión",
     "button_2": "Ver Más Misiones"
   },
   "Missions": [
     {
-      "title": "Throwing a surprise party",
-      "subtitle": "Coming to a group decision",
+      "title": "Organizando una fiesta de sorpresa",
+      "subtitle": "Llegando a una decisión en grupo",
       "levels": "A2, B1, B2"
     },
     {
-      "title": "The awkward dinner party",
-      "subtitle": "Practicing your conversation table manners",
+      "title": "La cena incómoda",
+      "subtitle": "Practicando tus modales en la mesa de conversación",
       "levels": "A2, B1"
     },
     {
-      "title": "Getting lost in the city",
-      "subtitle": "Asking for directions",
+      "title": "Perderte en la ciudad",
+      "subtitle": "Pedir indicaciones",
       "levels": "A1, A2, B1, B2"
     },
     {
-      "title": "You're going the wrong way!",
-      "subtitle": "Refuting the Uber driver",
+      "title": "¡Estás yendo por el camino equivocado!",
+      "subtitle": "Refutando el conductor de Uber",
       "levels": "B1, B2"
     },
     {
-      "title": "Heavy accents",
-      "subtitle": "Deciphering English all around the world",
+      "title": "Acentos fuertes",
+      "subtitle": "Descifrando el inglés en todo el mundo",
       "levels": "B1, B2, C1"
     },
     {
-      "title": "The wrong reservation",
-      "subtitle": "Negotating with service representative",
+      "title": "La reserva equivocada",
+      "subtitle": "Negociando con el representante del servicio",
       "levels": "B2, C1, C2"
     }
   ],
@@ -98,7 +98,7 @@
     "description": "¿Te cuesta expresarte en inglés? ¿Has tenido problemas de comunicación con compañeros de trabajo internacionales? Únete a una Misión hoy para ganar la confianza que necesitas para tener éxito en tus objetivos personales y profesionales."
   },
   "Contact": {
-    "header": "Contact Us"
+    "header": "Contáctanos"
   },
   "Application": {
     "header": "Regístrate para Nuestra Fase Beta",
