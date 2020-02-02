@@ -50,6 +50,7 @@ class LandingPage extends Component {
       <Header 
         handleChange={(e) => this.handleChange(e)}
         buttonText={messages.Hero.button_2}
+        language={this.state.language}
       />
       <Container hero>
         <h1>{messages.Hero.title}</h1>

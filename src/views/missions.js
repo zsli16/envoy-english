@@ -40,6 +40,7 @@ class Missions extends Component {
       <Header 
         handleChange={(e) => this.handleChange(e)}
         buttonText={messages.Hero.button_2}
+        language={this.state.language}
       />
       <Container>
         <h2>{messages.UpcomingMissions.header}</h2>

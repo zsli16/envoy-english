@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Logo, Navbar, Button} from '../styles/ui-components';
+import {Logo, Navbar, Button, NavbarButtons} from '../styles/ui-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket } from '@fortawesome/free-solid-svg-icons';
 import {primary} from '../styles/colors';
@@ -24,7 +24,7 @@ class Header extends Component {
     super(props);
     this.state = {
       signup: true,
-      defaultLanguage: 'EN'
+      language: 'EN'
     }
   }
 
@@ -43,17 +43,17 @@ class Header extends Component {
           <FontAwesomeIcon color={primary} style={iconStyle} size="2x" icon={faRocket}/>
         </Link>
         <Logo>Envoy Education</Logo>
-        <div style={{'position': 'absolute', 'top': '5%', 'right': '3%', 'display': 'flex', 'flexDirection': 'row-reverse', 'alignItems': 'center'}}>
+        <NavbarButtons>
           {this.state.signup &&
             <Link to='/apply'><Button primary>{this.props.buttonText}</Button></Link>
           }
           <FormControl variant="outlined">
-            <Select value={this.state.defaultLanguage} onChange={(e) => this.props.handleChange(e)}>
+            <Select value={this.props.language} onChange={(e) => this.props.handleChange(e)}>
               <MenuItem value={'EN'}>EN</MenuItem>
               <MenuItem value={'ES'}>ES</MenuItem>
             </Select>
           </FormControl>
-        </div>
+        </NavbarButtons>
       </Navbar>
     );
   }

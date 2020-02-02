@@ -44,6 +44,15 @@ export const Navbar = styled.div`
   padding: 3%;
 `;
 
+export const NavbarButtons = styled.div`
+  position: absolute,
+  top: 5%;
+  right: 3%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+`;
+
 export const Logo = styled.p`
   font-family: 'Exo', sans-serif;
   font-weight: 800;

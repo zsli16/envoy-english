@@ -37,6 +37,7 @@ class Application extends Component {
       <Header 
         handleChange={(e) => this.handleChange(e)}
         buttonText={messages.Hero.button_2}
+        language={this.state.language}
       />
       <Container>
         <h1>{messages.Application.header}</h1>
