@@ -1,0 +1,29 @@
+{
+  "Hero": {
+    "button1": "Cómo Funciona",
+    "button2": "Regístrate",
+    "description": "Mejora tus habilidades de conversación en inglés a través de cursos interactivos en vivo en línea. Cada clase presenta una Misión que requiere que superes retos y practiques hablar en un ambiente de la vida real.",
+    "tagline": "Nuestra Misión: Elevar tu Inglés",
+    "title": "Bienvenido a Envoy English"
+  },
+  "Missions": {
+    "A1.description": "Puedes usar frases básicas para presentarte y hacer preguntas simples.",
+    "A1.level": "A1",
+    "A1.title": "Novice",
+    "A2.level": "A2",
+    "A2.title": "Pioneer",
+    "B1.description": "Puedes comunicar mensajes sobre actividades diarias y resolver problemas.",
+    "B1.level": "B1",
+    "B1.title": "Messenger",
+    "B2.description": "Puedes interactuar fácilmente con hablantes nativos en la mayoría de los temas.",
+    "B2.level": "B2",
+    "B2.title": "Ambassador",
+    "C1.description": "Puedes usar el lenguaje de manera flexible y efectiva en una amplia gama de situaciones complicadas.",
+    "C1.level": "C1",
+    "C1.title": "Ninja",
+    "C2.description": "Puedes expresarte espontáneamente, con mucha fluidez y precisión.",
+    "C2.level": "C2",
+    "C2.title": "Master",
+    "description": "Puedes comunicarte para completar tareas simples y rutinarias."
+  }
+}

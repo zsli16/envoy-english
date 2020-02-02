@@ -1,0 +1,29 @@
+{
+  "Hero": {
+    "button1": "How it works",
+    "button2": "Start now",
+    "description": "Improve your English conversation skills through live, interactive courses online. Each class features a Mission where you practice speaking in real-life simulations to overcome challenges.",
+    "tagline": "Our Mission: Elevate Your English",
+    "title": "Welcome to Envoy English"
+  },
+  "Missions": {
+    "A1.description": "You can use basic phrases to introduce yourself and ask simple questions",
+    "A1.level": "A1",
+    "A1.title": "Novice",
+    "A2.level": "A2",
+    "A2.title": "Pioneer",
+    "B1.description": "You can communicate messages about daily activities and solve problems.",
+    "B1.level": "B1",
+    "B1.title": "Messenger",
+    "B2.description": "You can interact easily with native speakers on most topics.",
+    "B2.level": "B2",
+    "B2.title": "Ambassador",
+    "C1.description": "You can use language flexibly and effectively in a wide range of complicated situations.",
+    "C1.level": "C1",
+    "C1.title": "Ninja",
+    "C2.description": "You can express yourself spontaneously, very fluently, and precisely.",
+    "C2.level": "C2",
+    "C2.title": "Master",
+    "description": "You can communicate to complete simple, routine tasks."
+  }
+}
