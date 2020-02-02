@@ -10,6 +10,8 @@ import {Button, Circle, LevelDescription, Tube} from '../styles/ui-components';
 //content
 import Levels from '../content/levels.json';
 import Missions from '../content/missions.json';
+import EN from '../content/en.json';
+import ES from '../content/es.json';
 
 //images
 import convo from '../assets/videocall.png';
@@ -25,12 +27,15 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 
+const translations = {EN,ES};
+
 class LandingPage extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      language: 'EN'
+      language: 'EN',
+      messages: EN
     }
     this.handleChange = this.handleChange.bind(this);
   }
@@ -38,10 +43,12 @@ class LandingPage extends Component {
   handleChange(event) {
     const lang = event.target.value;
     this.setState({language: lang});
+    this.setState({messages: translations[lang]});
   }
 
   render() {
     const missionExamples = Missions.slice(0,3);
+    const {messages} = this.state;
 
     return (
       <>
@@ -55,14 +62,14 @@ class LandingPage extends Component {
       </FormControl>
       </div>
       <Container hero>
-        <h1>Welcome to Envoy English</h1>
-        <h2>Our Mission: Elevate Your English</h2>
+        <h1>{messages.Hero.title}</h1>
+        <h2>{messages.Hero.tagline}</h2>
         <Row>
-          <p id="hero-description">Improve your English conversation skills through live, interactive courses online. Each class features a Mission where you practice speaking in real-life simulations to overcome challenges.</p>
+          <p id="hero-description">{messages.Hero.description}</p>
         </Row>
         <Row>
-          <HashLink to="/#how-it-works"><Button>How it works</Button></HashLink>
-          <Link to='/apply'><Button primary>Start Now</Button></Link>
+          <HashLink to="/#how-it-works"><Button>{messages.Hero.button1}</Button></HashLink>
+          <Link to='/apply'><Button primary>{messages.Hero.button2}</Button></Link>
         </Row>
       </Container>
       <Container id="how-it-works">
