@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import EmailForm from '../components/email-form';
+import Header from '../components/header';
 
 //styles
 import {Container, ColoredContainer, Footer, Row, Cell, Grid} from '../styles/layout';
@@ -19,11 +20,6 @@ import missioncompleted from '../assets/missioncompleted.png';
 //icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
-
-//material
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
 
 const translations = {EN, ES};
 
@@ -52,15 +48,10 @@ class LandingPage extends Component {
 
     return (
       <>
-      <div style={{'position': 'absolute', 'top': '3%', 'right': '3%', 'display': 'flex', 'flexDirection': 'row-reverse', 'alignItems': 'center'}}>
-      <Link to='/apply'><Button primary>{messages.Hero.button_2}</Button></Link>
-      <FormControl variant="outlined">
-        <Select value={this.state.language} onChange={this.handleChange}>
-          <MenuItem value={'EN'}>EN</MenuItem>
-          <MenuItem value={'ES'}>ES</MenuItem>
-        </Select>
-      </FormControl>
-      </div>
+      <Header 
+        handleChange={(e) => this.handleChange(e)}
+        buttonText={messages.Hero.button_2}
+      />
       <Container hero>
         <h1>{messages.Hero.title}</h1>
         <h2>{messages.Hero.tagline}</h2>

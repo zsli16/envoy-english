@@ -4,12 +4,40 @@ import {StyledApplicationForm} from '../styles/ui-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import {HashLink} from 'react-router-hash-link';
+import Header from '../components/header';
+
+//content
+import EN from '../content/en.json';
+import ES from '../content/es.json';
+
+const translations = {EN, ES};
 
 class Application extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      language: 'EN',
+      messages: EN
+    }
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    const lang = event.target.value;
+    this.setState({language: lang});
+    this.setState({messages: translations[lang]});
+  }
+
   render() {
+    const {messages} = this.state;
 
     return (
       <>
+      <Header 
+        handleChange={(e) => this.handleChange(e)}
+        buttonText={messages.Hero.button_2}
+      />
       <Container>
         <h1>Register for Our Beta Trial</h1>
         <h2>Find Your Level, Pick a Mission, Get Started!</h2>
