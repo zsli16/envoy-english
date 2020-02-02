@@ -44,7 +44,6 @@ class LandingPage extends Component {
     const {messages} = this.state;
     const missionExamples = messages.Missions;
     const Levels = messages.Levels;
-    console.log('messages', messages)
 
     return (
       <>

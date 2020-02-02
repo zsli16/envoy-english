@@ -99,5 +99,12 @@
   },
   "Contact": {
     "header": "Contact Us"
+  },
+  "Application": {
+    "header": "Register for Our Beta Trial",
+    "tagline": "Find Your Level. Pick a Mission. Get Started!",
+    "description_1": "We are currently accepting applications for our Beta trial. To participate, please fill out the form below. This form will allow us to identify your English level and recommend Missions that are most suitable to you.",
+    "description_2": "All of our Beta missions are Free! The only requirements are a computer with a camera, microphone, and a strong internet connection. Ready? Get started below.",
+    "application_title": "Application for English Course"
   }
 }

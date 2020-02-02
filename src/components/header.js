@@ -43,7 +43,7 @@ class Header extends Component {
           <FontAwesomeIcon color={primary} style={iconStyle} size="2x" icon={faRocket}/>
         </Link>
         <Logo>Envoy Education</Logo>
-        <div style={{'position': 'absolute', 'top': '3%', 'right': '3%', 'display': 'flex', 'flexDirection': 'row-reverse', 'alignItems': 'center'}}>
+        <div style={{'position': 'absolute', 'top': '5%', 'right': '3%', 'display': 'flex', 'flexDirection': 'row-reverse', 'alignItems': 'center'}}>
           {this.state.signup &&
             <Link to='/apply'><Button primary>{this.props.buttonText}</Button></Link>
           }
