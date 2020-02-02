@@ -20,13 +20,40 @@ import missioncompleted from '../assets/missioncompleted.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
+//material
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
+
 class LandingPage extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      language: 'EN'
+    }
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    const lang = event.target.value;
+    this.setState({language: lang});
+  }
+
   render() {
     const missionExamples = Missions.slice(0,3);
 
     return (
       <>
-      <Link to='/apply'><Button style={{'position': 'absolute', 'top': '3%', 'right': '3%'}} primary>Sign up</Button></Link>
+      <div style={{'position': 'absolute', 'top': '3%', 'right': '3%', 'display': 'flex', 'flexDirection': 'row-reverse', 'alignItems': 'center'}}>
+      <Link to='/apply'><Button primary>Sign up</Button></Link>
+      <FormControl variant="outlined">
+        <Select value={this.state.language} onChange={this.handleChange}>
+          <MenuItem value={'EN'}>EN</MenuItem>
+          <MenuItem value={'ES'}>ES</MenuItem>
+        </Select>
+      </FormControl>
+      </div>
       <Container hero>
         <h1>Welcome to Envoy English</h1>
         <h2>Our Mission: Elevate Your English</h2>
