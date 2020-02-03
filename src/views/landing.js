@@ -64,7 +64,7 @@ class LandingPage extends Component {
         </Row>
       </Container>
       <Container id="how-it-works">
-        <h1>{messages.HowItWorks.heading}</h1>
+        <h1>{messages.HowItWorks.header}</h1>
         <Row>{messages.HowItWorks.description}</Row>
         <Row left tall>
           <img src={convo} alt="chat"/>
