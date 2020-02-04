@@ -1,6 +1,29 @@
 import styled, {css} from 'styled-components';
 import {primary} from './colors';
 
+export const ApplicationDeadline = styled.div`
+  font-size: .8em;
+  font-weight: 800;
+  text-transform: uppercase;
+  max-width: 250px;
+  text-align: right;
+  padding-right: 5%;
+  color: ${primary};
+
+  @media only screen and (max-width: 512px) {
+    display: none;
+  }
+`;
+
+export const StartNowDeadline = styled.div`
+  max-width: 65%;
+  margin-top: -10px;
+  font-style: italic;
+  @media only screen and (min-width: 512px) {
+    display: none;
+  }
+`;
+
 export const Button = styled.button`
   background: transparent;
   border-radius: 4px;

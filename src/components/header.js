@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Logo, Navbar, Button, NavbarButtons} from '../styles/ui-components';
+import {Logo, Navbar, Button, NavbarButtons, ApplicationDeadline} from '../styles/ui-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket } from '@fortawesome/free-solid-svg-icons';
 import {primary} from '../styles/colors';
@@ -24,7 +24,8 @@ class Header extends Component {
     super(props);
     this.state = {
       signup: true,
-      language: 'EN'
+      language: 'EN',
+      apply: false
     }
   }
 
@@ -32,6 +33,7 @@ class Header extends Component {
     const path = window.location.pathname;
     if (path === '/apply') {
       this.setState({signup: false})
+      this.setState({apply: true})
     }
   }
 
@@ -53,6 +55,12 @@ class Header extends Component {
               <MenuItem value={'ES'}>ES</MenuItem>
             </Select>
           </FormControl>
+          {(this.state.signup || this.state.apply) &&
+            <ApplicationDeadline>
+              {this.props.language === 'EN' && 'Accepting beta applications until Feb. 10!'}
+              {this.props.language === 'ES' && '¡Aceptando aplicaciones hasta el 10 de febrero!'}
+            </ApplicationDeadline>
+          }
         </NavbarButtons>
       </Navbar>
     );
