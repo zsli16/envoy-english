@@ -10,18 +10,18 @@
     "heading": "Cómo Funciona",
     "description": "La mejor manera de dominar un idioma es sumergirse en situaciones de la vida real, que a menudo requiere viajar al extranjero. Con Envoy English, ahora puedes practicar hablar inglés a tu nivel sin salir de casa. Cada Misión requiere que aprendas vocabulario, frases, y estrategias específicas. Luego usarás lo que has aprendido para comunicarte con tus compañeros de equipo y superar un reto.",
     "section_header_1": "Prepárate para tu Misión",
-    "section_tagline_1": "Estudia tu Informe de Misión para Aprender Frases Clave y Vocabulario",
-    "section_description_1": "Tu Informe de Misión contiene las palabras, frases, e información cruciales para tu éxito. Prepárate para usar estas nuevas frases en tu próxima Misión, y sonarás como un hablante nativo de inglés en poco tiempo.",
-    "section_header_2": "Supera los Obstaculos",
+    "section_tagline_1": "Estudia el Informe de Misión para Aprender Frases Clave y Vocabulario",
+    "section_description_1": "El Informe de Misión contiene las palabras, frases, e información cruciales para tu éxito. Prepárate para usar estas nuevas frases en tu próxima Misión, y sonarás como un hablante nativo de inglés en poco tiempo.",
+    "section_header_2": "Supera los Obstáculos",
     "section_tagline_2": "Usa tus Habilidades Lingüísticas para Resolver Problemas con tus Compañeros de Equipo",
     "section_description_2": "Para tener éxito, debes usar todas tus habilidades de comunicación en inglés y el nuevo vocabulario que has aprendido. Tendrás que trabajar en equipo con tus compañeros para completar cada reto. Tendrán que descubrir pistas, hacer preguntas, y tomar decisiones. Tu instructor nativo de inglés guiará la sesión, pero el éxito de la Misión depende de ti.",
     "section_header_3": "Misión cumplida!",
     "section_tagline_3": "Eleva tus Habilidades Lingüísticas",
-    "section_description_3": "Cada Misión está diseñada para aumentar tu nivel de inglés. Después del curso, su instructor te enviará comentarios personalizados con consejos sobre cómo seguir mejorando. Mientras avances en el idioma, desbloquearás Misiones más complicadas. ¿Estás preparado para el reto?"
+    "section_description_3": "Cada Misión está diseñada para aumentar tu nivel de inglés. Después del curso, tu instructor te enviará comentarios personalizados con consejos sobre cómo seguir mejorando. Mientras avances en el idioma, desbloquearás Misiones más complicadas. ¿Estás preparado para el reto?"
   },
   "Curriculum": {
     "header": "Nuestro Plan de Estudios",
-    "description": "Envoy English utiliza inmersión digital y desafíos interactivos para mejorar tu inglés. Cada Misión está diseñada para aumentar su nivel de fluidez, coherencia, interacción, y rango de expresión, de acuerdo con las definiciones de nivel en el Marco de Referencia Común Europeo para las Lenguas (MCER), lo cual es reconocido internacionalmente."
+    "description": "Envoy English utiliza inmersión digital y desafíos interactivos para mejorar tu inglés. Cada Misión está diseñada para aumentar tu nivel de fluidez, coherencia, interacción, y rango de expresión, de acuerdo con las definiciones de nivel en el Marco de Referencia Común Europeo para las Lenguas (MCER), lo cual es reconocido internacionalmente."
   },
   "Levels": [
     {
@@ -63,7 +63,7 @@
   },
   "Missions": [
     {
-      "title": "Organizando una fiesta de sorpresa",
+      "title": "Organizando una fiesta sorpresa",
       "subtitle": "Llegando a una decisión en grupo",
       "levels": "A2, B1, B2"
     },
@@ -79,7 +79,7 @@
     },
     {
       "title": "¡Estás yendo por el camino equivocado!",
-      "subtitle": "Refutando el conductor de Uber",
+      "subtitle": "Discutiendo con el conductor de Uber",
       "levels": "B1, B2"
     },
     {
