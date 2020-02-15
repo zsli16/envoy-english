@@ -57,8 +57,8 @@ class Header extends Component {
           </FormControl>
           {(this.state.signup || this.state.apply) &&
             <ApplicationDeadline>
-              {this.props.language === 'EN' && 'Accepting beta applications until Feb. 10!'}
-              {this.props.language === 'ES' && '¡Aceptando aplicaciones hasta el 10 de febrero!'}
+              {this.props.language === 'EN' && 'Now accepting beta applications'}
+              {this.props.language === 'ES' && '¡Aceptando aplicaciones para el programa beta!'}
             </ApplicationDeadline>
           }
         </NavbarButtons>
