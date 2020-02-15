@@ -54,7 +54,6 @@ class Application extends Component {
       </Container>
       <Container id="application">
         <h4>{messages.Application.application_title}</h4>
-        <h5 style={{'marginTop': 0}}>({messages.Application.deadline})</h5>
         <StyledApplicationForm 
           src="https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=36"
           scrolling='yes'
