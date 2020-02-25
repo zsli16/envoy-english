@@ -1,13 +1,18 @@
 import React, {Component} from 'react';
 
-const audioType = 'audio/webm';
+const audioType = 'audio/wav';
 
-export default class AudioRecorder extends Component {
+class AudioRecorder extends Component {
   constructor(props) {
     super(props);
     this.state = {
       recording: false,
-      audioUrl: ''
+      audioUrl: '',
+      formId: '18e3c244-dd6e-465c-831a-0c1915cda0f2',
+      portalId: '7028167',
+      formUrl: 'https://api.hsforms.com/submissions/v3/integration/submit/7028167/18e3c244-dd6e-465c-831a-0c1915cda0f2',
+      email: 'david.jm.kelly@gmail.com',
+      postUrl: 'http://api.hubapi.com/filemanager/api/v2/files?hapikey=949dfa43-b8b6-4782-a136-c6cba4f73715'
     };
   }
 
@@ -30,7 +35,7 @@ export default class AudioRecorder extends Component {
     };
   }
 
-  startRecording(e) {
+  startRecording = (e) => {
     e.preventDefault();
     // wipe old data chunks
     this.chunks = [];
@@ -40,7 +45,7 @@ export default class AudioRecorder extends Component {
     this.setState({recording: true});
   }
 
-  stopRecording(e) {
+  stopRecording = (e) => {
     e.preventDefault();
     // stop the recorder
     this.mediaRecorder.stop();
@@ -50,22 +55,51 @@ export default class AudioRecorder extends Component {
     this.saveAudio();
   }
 
-  saveAudio() {
+  saveAudio = () => {
     // convert saved chunks to blob
     const blob = new Blob(this.chunks, {'type' : audioType});
     // generate audio url from blob
     const audioUrl = window.URL.createObjectURL(blob);
+    const audioFile = new File([audioUrl], "audio", {type: audioType});
+    console.log('AUDIOFILE', audioFile)
     this.setState({audioUrl});
+  }
+
+  uploadFile = (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+    formData.append('audioFile', this.state.audioFile);
+
+    console.log('formData', formData)
+
+    const uploadOptions = {
+      method: 'POST',
+      body: formData
+    }
+
+    fetch(this.state.postUrl, uploadOptions)
+    .then(res => console.log(res.json()))
+    .catch(err => console.log('error', err))
+  }
+
+  getFile = (e) => {
+    const file = e.target.files[0];
+    console.log(file)
+  }
+
+  handleEmail = (e) => {
+    console.log(e.target.value)
+    this.setState({email: e.target.value})
   }
 
   render() {
     const {recording} = this.state;
 
     return (
+      <>
       <div>
         {this.state.audioUrl && <>
-          <audio src={this.state.audioUrl} controls="controls" />
-          <a href={this.state.audioUrl}>Download</a>
+          <audio href={this.state.audioUrl} src={this.state.audioUrl} controls="controls" />
         </>
         }
         <div>
@@ -73,6 +107,15 @@ export default class AudioRecorder extends Component {
           {recording && <button onClick={e => this.stopRecording(e)}>Stop</button>}
         </div>
       </div>
+      <form>
+        {/* <label>Email Address:</label>
+        <input type="text" name="email" value={this.state.email} placeholder="Email" onChange={(e) => this.handleEmail(e)}/> */}
+        <input onChange={this.getFile} type="file"></input>
+        {/* <button onClick={this.uploadFile}>Submit</button> */}
+      </form>
+      </>
     );
   }
 }
+
+export default AudioRecorder;
