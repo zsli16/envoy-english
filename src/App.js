@@ -5,6 +5,7 @@ import LandingPage from './views/landing';
 import Missions from './views/missions';
 import Application from './views/apply';
 import ApplyAudio from './views/apply-audio';
+import AudioRecorder from './views/audio-recorder';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/missions' component={Missions}/>
         <Route path='/apply' component={Application}/>
         <Route path='/audio' component={ApplyAudio}/>
+        <Route path='/record' component={AudioRecorder}/>
         <Redirect to='/'/>
       </Switch>
     </div>
