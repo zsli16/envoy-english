@@ -107,5 +107,13 @@
     "description_2": "¡Todas nuestras Misiones Beta son gratis! Los únicos requisitos son una computadora con cámara, micrófono y una buena conexión de internet.",
     "application_title": "La aplicación para el programa beta",
     "deadline": "¡Aceptando aplicaciones para el programa beta!"
-  }  
+  },
+  "Audio": {
+    "header": "Prepárate para tu Primera Clase",
+    "tagline": "Ayúdanos a verificar tu nivel",
+    "description": "Para completar tu aplicación, favor de entregar un mensaje de voz en inglés de 1-3 minutos hablando de un viaje que tomaste últimamente.",
+    "option_1": "Subir tu archivo de audio aquí",
+    "option_2": "Mándanos un mensaje de voz por Whatsapp",
+    "or": "O"
+  }
 }

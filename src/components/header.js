@@ -1,22 +1,17 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {Logo, Navbar, Button, NavbarButtons, ApplicationDeadline} from '../styles/ui-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRocket } from '@fortawesome/free-solid-svg-icons';
-import {primary} from '../styles/colors';
+import logo from '../assets/logo.png';
 
 //material
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 
-const iconStyle = {
-  'backgroundColor': `${primary}`,
-  'color': 'white',
-  'padding': '.5em',
-  'borderRadius': '45px',
-  'margin': '.25em',
-};
+const iconStyle={
+  'width': '60px',
+  'marginRight': '20px'
+}
 
 class Header extends Component {
 
@@ -42,7 +37,7 @@ class Header extends Component {
     return (
       <Navbar>
         <Link to="/">
-          <FontAwesomeIcon color={primary} style={iconStyle} size="2x" icon={faRocket}/>
+          <img src={logo} alt="logo" style={iconStyle}/>
         </Link>
         <Logo>Envoy Education</Logo>
         <NavbarButtons>

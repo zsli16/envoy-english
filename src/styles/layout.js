@@ -85,7 +85,7 @@ export const Row = styled.div`
 
   img {
     flex: 0 2 400px;
-    width: 50%;
+    width: 60px !important;
     height: auto;
     margin: 0 1.5em;
     vertical-align: middle;
@@ -94,6 +94,26 @@ export const Row = styled.div`
   div {
     flex: 0 3 auto;
   }
+
+  ${props => props.block && css`
+    width: 90%;
+    background-color: ${primary};
+    color: white;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+
+    img {
+      width: 50px;
+      margin-left: 0;
+      margin-right: 1em;
+    }
+
+    a {
+      color: white;
+    }
+  `}
 
   ${props => props.left && css`
     align-self: flex-start;
