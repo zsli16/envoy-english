@@ -95,6 +95,13 @@ export const Row = styled.div`
     flex: 0 3 auto;
   }
 
+  ${props => props.block && css`
+    width: 90%;
+    background-color: ${primary};
+    color: white;
+    height: 100px;
+  `}
+
   ${props => props.left && css`
     align-self: flex-start;
     text-align: left;

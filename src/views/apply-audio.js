@@ -12,7 +12,7 @@ import ES from '../content/es.json';
 
 const translations = {EN, ES};
 
-class Application extends Component {
+class ApplyAudio extends Component {
 
   constructor(props) {
     super(props);
@@ -40,28 +40,23 @@ class Application extends Component {
         language={this.state.language}
       />
       <Container>
-        <h1>{messages.Application.header}</h1>
-        <h2>{messages.Application.tagline}</h2>
+        <h1>{messages.Audio.header}</h1>
+        <h2>{messages.Audio.tagline}</h2>
         <Row>
-          <h4>{messages.Application.description_2}</h4>
-        </Row>
-        <Row>
-          <HashLink to="/apply/#application"><FontAwesomeIcon id="down-arrow" color='lightgray' size="3x" icon={faChevronDown}/></HashLink>
+          <h4>{messages.Audio.description}</h4>
         </Row>
       </Container>
-      <Container id="application">
-        <h4>{messages.Application.application_title}</h4>
-        <StyledApplicationForm 
-          src="https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=36"
-          scrolling='yes'
-          frameBorder='0'
-          seamless='seamless'
-          title='application'
-        />
+      <Container>
+        <Row block>
+          <h1>{messages.Audio.option_1}</h1>
+        </Row>
+        <Row block>
+          <h1>{messages.Audio.option_2}</h1>
+        </Row>
       </Container>
       </>
     );
   }
 };
 
-export default Application;
+export default ApplyAudio;

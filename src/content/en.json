@@ -107,5 +107,12 @@
     "description_2": "All of our Beta missions are Free! The only requirements are a computer with a camera, microphone, and a strong internet connection. Ready? Get started below.",
     "application_title": "Application for English Classes (Beta)",
     "deadline": "Now accepting beta applications"
+  },
+  "Audio": {
+    "header": "Get Ready for Your First Class",
+    "tagline": "Help us find the right level for you",
+    "description": "To finish your application, please submit a 1-3 minute voice recording in English describing a recent trip you went on.",
+    "option_1": "Upload your audio file here",
+    "option_2": "Send us a voice message on Whatsapp" 
   }
 }
