@@ -45,6 +45,7 @@ class Application extends Component {
         <Row>
           <h4>{messages.Application.description_2}</h4>
         </Row>
+
         <Row>
           <HashLink to="/apply/#application"><FontAwesomeIcon id="down-arrow" color='lightgray' size="3x" icon={faChevronDown}/></HashLink>
         </Row>
@@ -56,7 +57,7 @@ class Application extends Component {
           scrolling='yes'
           frameBorder='0'
           seamless='seamless'
-          title='application'
+          title='application'          
         />
       </Container>
       </>

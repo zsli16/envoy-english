@@ -145,14 +145,17 @@ export const StyledApplicationForm = styled.iframe`
   height: 1880px;
   width: 100%;
   padding-bottom: 5%;
+  height: ${p => p.height};
 
   @media only screen and (max-width: 512px) {
     height: 2850px;
+    height: ${p => p.height && '300px'};
     overflow: scroll;
     padding-bottom: 10%;
   }
 
   @media only screen and (min-width: 512px) and (max-width: 768px) {
     height: 2080px;
+    height: ${p => p.height && '300px'};
   }
 `;
