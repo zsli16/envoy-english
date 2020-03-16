@@ -26,7 +26,7 @@ class Header extends Component {
 
   componentDidMount() {
     const path = window.location.pathname;
-    if (path === '/apply') {
+    if (path === '/apply' || path === '/free-trial') {
       this.setState({signup: false})
       this.setState({apply: true})
     }
@@ -42,7 +42,7 @@ class Header extends Component {
         <Logo>Envoy Education</Logo>
         <NavbarButtons>
           {this.state.signup &&
-            <Link to='/apply'><Button primary>{this.props.buttonText}</Button></Link>
+            <Link to='/free-trial'><Button primary>{this.props.buttonText}</Button></Link>
           }
           <FormControl variant="outlined">
             <Select value={this.props.language} onChange={(e) => this.props.handleChange(e)}>
@@ -52,8 +52,8 @@ class Header extends Component {
           </FormControl>
           {(this.state.signup || this.state.apply) &&
             <ApplicationDeadline>
-              {this.props.language === 'EN' && 'Now accepting beta applications'}
-              {this.props.language === 'ES' && '¡Aceptando aplicaciones para el programa beta!'}
+              {this.props.language === 'EN' && 'Beta program now available'}
+              {this.props.language === 'ES' && '¡Únete al Programa Beta!'}
             </ApplicationDeadline>
           }
         </NavbarButtons>

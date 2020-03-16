@@ -4,7 +4,7 @@
     "tagline": "Our Mission: Elevate Your English",
     "description": "Improve your English conversation skills through live, interactive courses online. Each class features a Mission where you practice speaking in real-life simulations to overcome challenges.",
     "button_1": "How it works",
-    "button_2": "Start now"
+    "button_2": "Try for FREE"
   },
   "HowItWorks": {
     "header": "How It Works",
@@ -115,5 +115,10 @@
     "option_1": "Upload your audio file here",
     "option_2": "Send us a voice message on Whatsapp",
     "or": "OR" 
+  },
+  "FreeTrial": {
+    "header": "Sign up for a FREE Trial Class",
+    "tagline": "Envoy English Mission Training",
+    "description": "Practice your English in a training Mission, and learn how to succeed in our classes. Get personalized feedback on your current English level and tips on how to improve."
   }
 }

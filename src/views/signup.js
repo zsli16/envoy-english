@@ -1,0 +1,57 @@
+import React, {Component} from 'react';
+import {Container, Row} from '../styles/layout';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import Header from '../components/header';
+import SimplybookWidget from '../components/simplybookwidget';
+
+//content
+import EN from '../content/en.json';
+import ES from '../content/es.json';
+
+const translations = {EN, ES};
+
+class SignUpFreeTrial extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      language: 'EN',
+      messages: EN
+    }
+  }
+
+  componentDidMount() {
+    new SimplybookWidget({"widget_type":"iframe","url":"https://envoyenglish.simplybook.me","theme":"dainty","theme_settings":{"timeline_show_end_time":"1","sb_base_color":"#292076","secondary_color":"#e4ebf5","sb_text_color":"#a1a1a1","display_item_mode":"block","body_bg_color":"#ffffff","sb_background_image":"","dark_font_color":"#293b36","light_font_color":"#ffffff","sb_company_label_color":"#ffffff","sb_cancellation_color":"#ff7a93","hide_img_mode":"0"},"timeline":"modern_week","datepicker":"inline_datepicker","is_rtl":false,"app_config":{"predefined":[]}});
+  }
+
+  handleChange(event) {
+    const lang = event.target.value;
+    this.setState({language: lang});
+    this.setState({messages: translations[lang]});
+  }
+
+  render() {
+    const {messages} = this.state;
+    return (
+      <>
+      <Header 
+        handleChange={(e) => this.handleChange(e)}
+        language={this.state.language}
+      />
+      <Container hero>
+        <h1>{messages.FreeTrial.header}</h1>
+        <h2>{messages.FreeTrial.tagline}</h2>
+      <Row>
+        <h3>{messages.FreeTrial.description}</h3>
+      </Row>
+      <Row>
+        <FontAwesomeIcon id="down-arrow" color='lightgray' size="3x" icon={faChevronDown}/>
+      </Row>
+      </Container>
+      </>
+    );
+  }
+};
+
+export default SignUpFreeTrial;

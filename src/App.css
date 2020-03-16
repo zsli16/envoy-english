@@ -423,10 +423,12 @@
 @media only screen and (min-width: 1024px) {
   h1 {
     font-size: 3em;
+    text-align: center;
   }
 
   h2 {
     font-size: 2.3em;
+    text-align: center;
   }
 
   h3 {
@@ -449,6 +451,7 @@
 
   h2 {
     font-size: 2em;
+    text-align: center;
   }
 
   h3 {

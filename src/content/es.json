@@ -3,7 +3,7 @@
     "title": "Bienvenido a Envoy English",
     "tagline": "Nuestra Misión: Elevar tu Inglés",
     "button_1": "Cómo Funciona",
-    "button_2": "Regístrate",
+    "button_2": "Prueba Gratis",
     "description": "Mejora tus habilidades de conversación en inglés a través de cursos interactivos en vivo en línea. Cada clase presenta una Misión que requiere que superes retos y practiques hablar en un ambiente de la vida real."
   },
   "HowItWorks": {
@@ -115,5 +115,10 @@
     "option_1": "Subir tu archivo de audio aquí",
     "option_2": "Mándanos un mensaje de voz por Whatsapp",
     "or": "O"
+  },
+  "FreeTrial": {
+    "header": "Inscríbete en una Clase de Prueba GRATUITA",
+    "tagline": "Misión de Capacitación de Envoy English",
+    "description": "Practica tu inglés en una Misión de capacitación, y aprende cómo tener éxito en nuestras clases. Después de la clase, recibirás comentarios personalizados sobre tu nivel de inglés actual y consejos sobre cómo mejorar."
   }
 }

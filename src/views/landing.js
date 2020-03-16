@@ -6,7 +6,7 @@ import Header from '../components/header';
 
 //styles
 import {Container, ColoredContainer, Footer, Row, Cell, Grid} from '../styles/layout';
-import {Button, Circle, LevelDescription, Tube, StartNowDeadline} from '../styles/ui-components';
+import {Button, Circle, LevelDescription, Tube} from '../styles/ui-components';
 
 //content
 import EN from '../content/en.json';
@@ -60,10 +60,7 @@ class LandingPage extends Component {
         </Row>
         <Row>
           <HashLink to="/#how-it-works"><Button>{messages.Hero.button_1}</Button></HashLink>
-          <Link to='/apply'><Button primary>{messages.Hero.button_2}</Button></Link>
-        </Row>
-        <Row>
-          <StartNowDeadline>({messages.Application.deadline})</StartNowDeadline>
+          <Link to='/free-trial'><Button primary>{messages.Hero.button_2}</Button></Link>
         </Row>
       </Container>
       <Container id="how-it-works">
@@ -126,7 +123,7 @@ class LandingPage extends Component {
               </div>
               <div>
                 <p>{mission.levels}</p>
-                <Link to='/apply'><Button>{messages.UpcomingMissions.button_1}</Button></Link>
+                <Link to='/free-trial'><Button>{messages.UpcomingMissions.button_1}</Button></Link>
               </div>
             </Cell>
           })

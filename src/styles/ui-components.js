@@ -15,15 +15,6 @@ export const ApplicationDeadline = styled.div`
   }
 `;
 
-export const StartNowDeadline = styled.div`
-  max-width: 65%;
-  margin-top: -10px;
-  font-style: italic;
-  @media only screen and (min-width: 512px) {
-    display: none;
-  }
-`;
-
 export const Button = styled.button`
   background: transparent;
   border-radius: 4px;
@@ -50,6 +41,13 @@ export const Button = styled.button`
 
     a {
       color: white;
+    }
+
+    :hover {
+      cursor: pointer;
+      background: white;
+      border: ${primary} solid 2px;
+      color: ${primary};
     }
   `}
 

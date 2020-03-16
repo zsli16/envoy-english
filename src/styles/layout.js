@@ -10,6 +10,8 @@ export const Container = styled.div`
 
   ${props => props.hero && css`
     padding-bottom: 9em;
+    padding-left: 10%;
+    padding-right: 10%;
   `}
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -21,10 +23,8 @@ export const Container = styled.div`
   }
 
   @media only screen and (min-width: 320px) and (max-width: 425px) {
-    padding: 1em;
-
     ${props => props.hero && css`
-      padding-bottom: 9em;
+      padding-bottom: 5%;
     `}
   }
 `;
@@ -85,7 +85,7 @@ export const Row = styled.div`
 
   img {
     flex: 0 2 400px;
-    width: 60px !important;
+    width: 50%;
     height: auto;
     margin: 0 1.5em;
     vertical-align: middle;
@@ -133,13 +133,20 @@ export const Row = styled.div`
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     margin: 1.5em 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media only screen and (min-width: 425px) and (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
   }
 
   @media only screen and (min-width: 320px) and (max-width: 425px) {
     flex-direction: column;
-    align-items: center;
     text-align: center;
     width: 100%;
+    align-items: center;
     justify-content: center;
 
     img {
