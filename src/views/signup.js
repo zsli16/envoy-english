@@ -51,7 +51,7 @@ class SignUpFreeTrial extends Component {
         <h3>{messages.FreeTrial.description}</h3>
       </Row>
       <Row>
-        <Button primary onClick={() => this.simplybookButton.showPopupFrame()}>Sign Up Now</Button>
+        <Button primary onClick={() => this.simplybookButton.showPopupFrame()}>{messages.FreeTrial.button}</Button>
       </Row>
       </Container>
       </>
