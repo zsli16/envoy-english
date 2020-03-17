@@ -50,7 +50,7 @@ class SignUpFreeTrial extends Component {
         <FontAwesomeIcon id="down-arrow" color='lightgray' size="3x" icon={faChevronDown}/>
       </Row>
       </Container>
-      <Container bookingform id="simplybook">
+      <Container id="simplybook">
         {!this.state.loaded &&
           <>
           <Row>
@@ -67,7 +67,7 @@ class SignUpFreeTrial extends Component {
           scrolling = 'no'
           id = 'simplybook'
           border = '0'
-          width = "80%"
+          width = "75%"
           height = "1000px"
           className = "sb-widget-iframe"
           onLoad = {() => this.setState({loaded: true})}
