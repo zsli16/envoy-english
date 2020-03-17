@@ -30,8 +30,6 @@ const SimplybookWidget = function (options) {
       }
       this.options[name] = options[name];
   }
-
-  this.init();
 };
 
 SimplybookWidget.prototype.init = function () {
@@ -218,91 +216,24 @@ SimplybookWidget.prototype.updateWidgetSize = function (data) {
 };
 
 SimplybookWidget.prototype.displayIframe = function () {
-  document.write(
-      '<iframe scrolling="no" class="sb-widget-iframe" width="100%" border="0" frameborder="0" src="' + this.getUrl() + '" name="' + this.name + '" id="' + this.name + '"></iframe>'
-  );
-  this.frame = document.getElementById(this.name);
-
+  const existingIframe = document.getElementById(this.name);
+  if (!existingIframe) {
+    const iframe = document.createElement('iframe');
+    iframe.className = "sb-widget-iframe";
+    iframe.src = "https://envoyenglish.simplybook.me/v2/#book";
+    iframe.scrolling = "no";
+    iframe.id = this.name;
+    iframe.width="800px";
+    iframe.height="1000px";
+    iframe.border="0";
+    iframe.frameborder="0";
+    const container = document.getElementById('simplybook');
+    container.appendChild(iframe);
+    this.iframe = document.getElementById(this.name)
+  }
   this.subscribeMessages();
 };
 
-// button widget methods
-SimplybookWidget.prototype.addButton = function () {
-  this.addButtonWidgetStyles();
-
-  var btn;
-  if (this.options.button_custom_id) {
-      btn = document.getElementById(this.options.button_custom_id);
-  } else {
-      btn = this.getButtonNode();
-  }
-
-  var instance = this;
-  btn.addEventListener('click', function () {
-      instance.showPopupFrame('book');
-  });
-
-  if(!this.options.button_custom_id) {
-      document.body.appendChild(btn);
-  }
-};
-
-SimplybookWidget.prototype.addContactButton = function () {
-  this.addButtonWidgetStyles();
-
-  var btn;
-  if (this.options.button_custom_id) {
-      btn = document.getElementById(this.options.button_custom_id);
-  } else {
-      btn = this.getButtonNode();
-  }
-
-  var instance = this;
-  btn.addEventListener('click', function () {
-      instance.showPopupFrame('contact-widget');
-  });
-
-  if(!this.options.button_custom_id) {
-      document.body.appendChild(btn);
-  }
-};
-
-SimplybookWidget.prototype.getButtonNode = function () {
-  this.btn = document.createElement('div');
-  this.btnLabel = document.createElement('div');
-  this.btnLabel.innerText = this.options.button_title;
-
-  this.btn.appendChild(this.btnLabel);
-
-  this.updateButtonStyles();
-
-  return this.btn;
-};
-
-SimplybookWidget.prototype.updateButtonStyles = function (options) {
-  if (!this.btn) {
-      return;
-  }
-  if (options) {
-      this.options.button_position = options.button_position;
-      this.options.button_background_color = options.button_background_color;
-      this.options.button_text_color = options.button_text_color;
-      this.options.button_position_offset = options.button_position_offset;
-      this.options.button_title = options.button_title;
-  }
-
-  this.btn.className = 'simplybook-widget-button ' + this.options.button_position;
-  this.btn.style.backgroundColor = this.options.button_background_color;
-  this.btn.style.color = this.options.button_text_color;
-  if (this.options.button_position === 'top' || this.options.button_position === 'bottom') {
-      this.btn.style.right = this.options.button_position_offset;
-      this.btn.style.bottom = '';
-  } else {
-      this.btn.style.bottom = this.options.button_position_offset;
-      this.btn.style.right = '';
-  }
-  this.btnLabel.innerText = this.options.button_title;
-};
 
 SimplybookWidget.prototype.resetWidget = function (options) {
   this.options = options;

@@ -17,12 +17,19 @@ class SignUpFreeTrial extends Component {
     super(props);
     this.state = {
       language: 'EN',
-      messages: EN
+      messages: EN,
+      loaded: false,
     }
+    this.simplybook = new SimplybookWidget({"widget_type":"iframe","url":"https://envoyenglish.simplybook.me","theme":"dainty","theme_settings":{"timeline_show_end_time":"1","sb_base_color":"#292076","secondary_color":"#e4ebf5","sb_text_color":"#a1a1a1","display_item_mode":"block","body_bg_color":"#ffffff","sb_background_image":"","dark_font_color":"#293b36","light_font_color":"#ffffff","sb_company_label_color":"#ffffff","sb_cancellation_color":"#ff7a93","hide_img_mode":"0"},"timeline":"modern_week","datepicker":"inline_datepicker","is_rtl":false,"app_config":{"predefined":[]}})
   }
 
   componentDidMount() {
-    new SimplybookWidget({"widget_type":"iframe","url":"https://envoyenglish.simplybook.me","theme":"dainty","theme_settings":{"timeline_show_end_time":"1","sb_base_color":"#292076","secondary_color":"#e4ebf5","sb_text_color":"#a1a1a1","display_item_mode":"block","body_bg_color":"#ffffff","sb_background_image":"","dark_font_color":"#293b36","light_font_color":"#ffffff","sb_company_label_color":"#ffffff","sb_cancellation_color":"#ff7a93","hide_img_mode":"0"},"timeline":"modern_week","datepicker":"inline_datepicker","is_rtl":false,"app_config":{"predefined":[]}});
+    this.setState({loaded: true});
+  }
+
+  componentWillUnmount() {
+    const el = document.getElementById(this.simplybook.name);
+    el.parentNode.removeChild(el);
   }
 
   handleChange(event) {
@@ -39,7 +46,7 @@ class SignUpFreeTrial extends Component {
         handleChange={(e) => this.handleChange(e)}
         language={this.state.language}
       />
-      <Container hero>
+      <Container>
         <h1>{messages.FreeTrial.header}</h1>
         <h2>{messages.FreeTrial.tagline}</h2>
       <Row>
@@ -48,6 +55,9 @@ class SignUpFreeTrial extends Component {
       <Row>
         <FontAwesomeIcon id="down-arrow" color='lightgray' size="3x" icon={faChevronDown}/>
       </Row>
+      </Container>
+      <Container id="simplybook">
+        {this.state.loaded && this.simplybook.displayIframe()}
       </Container>
       </>
     );

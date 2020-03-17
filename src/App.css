@@ -473,6 +473,11 @@
     font-size: 1.1em;
     align-self: auto;
   }
+
+  .sb-widget-iframe {
+    width: 100%;
+    height: 1800px;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
@@ -492,6 +497,11 @@
 
   #hero-description {
     font-size: 1em;
+  }
+
+  .sb-widget-iframe {
+    width: 100%;
+    height: 1800px;
   }
 }
 
