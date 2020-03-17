@@ -137,6 +137,20 @@ export const StyledEmailForm = styled.iframe`
   }
 `;
 
+export const StyledDocs = styled.iframe`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  @media only screen and (max-width: 720px) {
+    position: absolute;
+    left: 0% !important;
+    min-width: 100%;
+    height: 100%;
+  }
+`;
+
 export const StyledApplicationForm = styled.iframe`
   position: relative;
   min-width: 100%;

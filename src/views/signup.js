@@ -40,7 +40,8 @@ class SignUpFreeTrial extends Component {
     const {messages} = this.state;
     return (
       <>
-      <Header 
+      <Header
+        page={'free-trial'} 
         handleChange={(e) => this.handleChange(e)}
         language={this.state.language}
       />

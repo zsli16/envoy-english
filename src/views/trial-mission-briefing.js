@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
-import {Container, Grid, Cell, Footer, Row, ColoredContainer} from '../styles/layout';
-import {Button} from '../styles/ui-components';
+import {StyledDocs} from '../styles/ui-components';
 import Header from '../components/header';
 
 //content
@@ -30,14 +28,17 @@ class TrialMissionBriefing extends Component {
     const {messages} = this.state;
 
     return (
-      <div style={{height: '100vh', width: '100vw', textAlign: 'center'}}>
-        <iframe 
+      <>
+      <Header page={'briefing'}/>
+      <div style={{height: '100vh', width: '100vw'}}>
+        <StyledDocs 
           src="https://docs.google.com/document/d/e/2PACX-1vTXfQmkU7EKmda2ZqL_7sij0hYslstPXD2b4GeEYalaKDFItR6MNt4Vsg7HQidvs-lmG4hyDGYn0vri/pub?embedded=true"
           width="100%"
           height="100%"
-        >
-        </iframe>
+          style={{position: 'absolute', left: '15%', top: '15%'}}
+        />
       </div>
+      </>
     );
   }
 };
