@@ -47,7 +47,8 @@ class LandingPage extends Component {
 
     return (
       <>
-      <Header 
+      <Header
+        page = {'landing'} 
         handleChange={(e) => this.handleChange(e)}
         buttonText={messages.Hero.button_2}
         language={this.state.language}
