@@ -121,5 +121,10 @@
     "tagline": "Envoy English Mission Training",
     "description": "Practice your English in a training Mission, and learn how to succeed in our classes. Get personalized feedback on your current English level and tips on how to improve.",
     "button": "Sign Up Now"
+  },
+  "FreeClassCode": {
+    "header": "Get a FREE class code",
+    "tagline": "All Missions in the beta program are FREE with this discount code.",
+    "description": "Register with a valid credit card today. You will not pay anything - unless you miss a class you signed up for."
   }
 }

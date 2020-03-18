@@ -121,5 +121,10 @@
     "tagline": "Misión de Capacitación de Envoy English",
     "description": "Practica tu inglés en una Misión de capacitación, y aprende cómo tener éxito en nuestras clases. Después de la clase, recibirás comentarios personalizados sobre tu nivel de inglés actual y consejos sobre cómo mejorar.",
     "button": "Inscríbete Ahora"
+  },
+  "FreeClassCode": {
+    "header": "Get a FREE class code",
+    "tagline": "All Missions in the beta program are FREE with this discount code.",
+    "description": "Register with a valid credit card today. You will not pay anything - unless you miss a class you signed up for."
   }
 }

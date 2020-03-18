@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import {Container, Row} from '../styles/layout';
-import {StyledApplicationForm} from '../styles/ui-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import {HashLink} from 'react-router-hash-link';
 import Header from '../components/header';
 
 //content
@@ -41,25 +39,24 @@ class FreeClassCode extends Component {
         language={this.state.language}
       />
       <Container>
-        <h1>{messages.Application.header}</h1>
-        <h2>{messages.Application.tagline}</h2>
+        <h1>{messages.FreeClassCode.header}</h1>
+        <h2>{messages.FreeClassCode.tagline}</h2>
         <Row>
-          <h4>{messages.Application.description_2}</h4>
+          <h4>{messages.FreeClassCode.description}</h4>
         </Row>
-
         <Row>
-          <HashLink to="/apply/#application"><FontAwesomeIcon id="down-arrow" color='lightgray' size="3x" icon={faChevronDown}/></HashLink>
+          <FontAwesomeIcon id="down-arrow" color='lightgray' size="3x" icon={faChevronDown}/>
         </Row>
       </Container>
       <Container id="application">
-        <h4>{messages.Application.application_title}</h4>
-        <StyledApplicationForm 
+        <iframe 
           src="https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=42"
           scrolling='yes'
           frameBorder='0'
           seamless='seamless'
           title='booking-code'
-          height='1060'          
+          height='1060px'
+          width="100%"        
         />
       </Container>
       </>
