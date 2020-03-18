@@ -33,7 +33,7 @@ class Header extends Component {
           <Logo>Envoy Education</Logo>
         </div>
         <NavbarButtons>
-          {this.state.signup &&
+          {this.props.page === 'landing' &&
             <Link to='/free-trial'><Button primary>{this.props.buttonText}</Button></Link>
           }
           {this.props.page === 'briefing' &&
