@@ -18,39 +18,40 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      signup: true,
-      language: 'EN',
-      apply: false
-    }
-  }
-
-  componentDidMount() {
-    const path = window.location.pathname;
-    if (path === '/apply' || path === '/free-trial') {
-      this.setState({signup: false})
-      this.setState({apply: true})
+      language: 'EN'  
     }
   }
 
   render() {
 
     return (
-      <Navbar>
-        <Link to="/">
-          <img src={logo} alt="logo" style={iconStyle}/>
-        </Link>
-        <Logo>Envoy Education</Logo>
+      <Navbar className = {this.props.className}>
+        <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+          <Link to="/">
+            <img src={logo} alt="logo" style={iconStyle}/>
+          </Link>
+          <Logo>Envoy Education</Logo>
+        </div>
         <NavbarButtons>
           {this.state.signup &&
             <Link to='/free-trial'><Button primary>{this.props.buttonText}</Button></Link>
           }
-          <FormControl variant="outlined">
-            <Select value={this.props.language} onChange={(e) => this.props.handleChange(e)}>
-              <MenuItem value={'EN'}>EN</MenuItem>
-              <MenuItem value={'ES'}>ES</MenuItem>
-            </Select>
-          </FormControl>
-          {(this.state.signup || this.state.apply) &&
+          {this.props.page === 'briefing' &&
+            <a target='_blank' href={this.props.pdf}>
+              <Button primary>
+                {this.props.language === 'EN' ? 'Download as PDF' : 'Descarger en PDF'}
+              </Button>
+            </a>
+          }
+          {this.props.handleChange && 
+            <FormControl variant="outlined">
+              <Select value={this.props.language} onChange={(e) => this.props.handleChange(e)}>
+                <MenuItem value={'EN'}>EN</MenuItem>
+                <MenuItem value={'ES'}>ES</MenuItem>
+              </Select>
+            </FormControl>
+          }
+          {(this.props.page === 'landing' || this.props.page === 'landing') &&
             <ApplicationDeadline>
               {this.props.language === 'EN' && 'Beta program now available'}
               {this.props.language === 'ES' && '¡Únete al Programa Beta!'}
