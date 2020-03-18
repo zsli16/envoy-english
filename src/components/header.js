@@ -18,24 +18,14 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      signup: true,
-      language: 'EN',
-      apply: false
-    }
-  }
-
-  componentDidMount() {
-    const path = window.location.pathname;
-    if (path === '/apply' || path === '/free-trial') {
-      this.setState({signup: false})
-      this.setState({apply: true})
+      language: 'EN'  
     }
   }
 
   render() {
 
     return (
-      <Navbar>
+      <Navbar className = {this.props.className}>
         <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
           <Link to="/">
             <img src={logo} alt="logo" style={iconStyle}/>
@@ -47,7 +37,11 @@ class Header extends Component {
             <Link to='/free-trial'><Button primary>{this.props.buttonText}</Button></Link>
           }
           {this.props.page === 'briefing' &&
-            <Link to='/'><Button primary>Download as PDF</Button></Link>
+            <a target='_blank' href={this.props.pdf}>
+              <Button primary>
+                {this.props.language === 'EN' ? 'Download as PDF' : 'Descarger en PDF'}
+              </Button>
+            </a>
           }
           {this.props.handleChange && 
             <FormControl variant="outlined">
