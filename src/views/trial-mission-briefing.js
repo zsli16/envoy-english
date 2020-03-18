@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {StyledDocs} from '../styles/ui-components';
 import Header from '../components/header';
 
 class TrialMissionBriefing extends Component {
@@ -43,10 +42,12 @@ class TrialMissionBriefing extends Component {
         pdf={this.state.pdf}
       />
       <div style={{height: '100vh', width: '100vw'}}>
-        <StyledDocs
+        <iframe
           id = 'briefing' 
           src= "https://docs.google.com/document/d/e/2PACX-1vTXfQmkU7EKmda2ZqL_7sij0hYslstPXD2b4GeEYalaKDFItR6MNt4Vsg7HQidvs-lmG4hyDGYn0vri/pub?embedded=true"
           width="100%"
+          seamless='seamless'
+          overflow='hidden'
           height="100%"
           style={{position: 'absolute', left: '15%', top: '15%'}}
         />
