@@ -6,6 +6,8 @@ import Missions from './views/missions';
 import Application from './views/apply';
 import ApplyAudio from './views/apply-audio';
 import SignUpFreeTrial from './views/signup';
+import TrialMissionBriefing from './views/trial-mission-briefing';
+import FreeClassCode from './views/free-class-code';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path='/apply' component={Application}/>
         <Route path='/audio' component={ApplyAudio}/>
         <Route path='/free-trial' component={SignUpFreeTrial}/>
+        <Route path='/trial-mission-briefing' component={TrialMissionBriefing}/>
+        <Route path='/free-class-code' component={FreeClassCode}/>
         <Redirect to='/'/>
       </Switch>
     </div>
