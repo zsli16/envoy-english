@@ -56,6 +56,12 @@ export const Button = styled.button`
     color: white;
     padding: .75em 1.5em;
   `}
+
+  ${props => props.download && css`
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+      display: none;
+    }
+  `}
 `;
 
 export const Navbar = styled.div`

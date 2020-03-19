@@ -22,12 +22,12 @@ class TrialMissionBriefing extends Component {
     this.setState({language: lang});
     const iframe = document.getElementById('briefing')
     if (lang === 'EN') {
-      iframe.setAttribute("src", "https://docs.google.com/document/d/e/2PACX-1vTXfQmkU7EKmda2ZqL_7sij0hYslstPXD2b4GeEYalaKDFItR6MNt4Vsg7HQidvs-lmG4hyDGYn0vri/pub?embedded=true");
+      iframe.setAttribute("src", "https://drive.google.com/file/d/14SLwU9qZWlO20WkEGfu5mbk150kyB-2u/preview");
       this.setState({pdf: 'https://drive.google.com/open?id=14SLwU9qZWlO20WkEGfu5mbk150kyB-2u'})
     }
     if (lang === 'ES') {
-      iframe.setAttribute("src", "https://docs.google.com/document/d/e/2PACX-1vQXj8SHgVj2W_YamLk_x7DqokNNRuQqJiQWuOZQoS-b5G0cHMoRhGCb29eVvKdiC1aI0eU76xHWNjw_/pub?embedded=true");
-      this.setState({pdf: 'https://drive.google.com/open?id=1zGtuiP1QAet0qEObbL4Cxn_C4DPhOsZy'})
+      iframe.setAttribute("src", "https://drive.google.com/file/d/1zGtuiP1QAet0qEObbL4Cxn_C4DPhOsZy/preview");
+      this.setState({pdf: 'https://drive.google.com/file/d/1zGtuiP1QAet0qEObbL4Cxn_C4DPhOsZy'})
     }
   }
 
@@ -43,13 +43,12 @@ class TrialMissionBriefing extends Component {
       />
       <div style={{height: '100vh', width: '100vw'}}>
         <iframe
-          id = 'briefing' 
-          src= "https://docs.google.com/document/d/e/2PACX-1vTXfQmkU7EKmda2ZqL_7sij0hYslstPXD2b4GeEYalaKDFItR6MNt4Vsg7HQidvs-lmG4hyDGYn0vri/pub?embedded=true"
+          id = 'briefing'
+          src= "https://drive.google.com/file/d/14SLwU9qZWlO20WkEGfu5mbk150kyB-2u/preview"
           width="100%"
           seamless='seamless'
           overflow='hidden'
           height="100%"
-          style={{position: 'absolute', left: '15%', top: '15%'}}
         />
       </div>
       </>

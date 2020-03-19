@@ -38,7 +38,7 @@ class Header extends Component {
           }
           {this.props.page === 'briefing' &&
             <a target='_blank' href={this.props.pdf}>
-              <Button primary>
+              <Button primary download>
                 {this.props.language === 'EN' ? 'Download as PDF' : 'Descarger en PDF'}
               </Button>
             </a>
