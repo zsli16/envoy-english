@@ -30,8 +30,6 @@ var SimplybookWidget = function (options) {
         }
         this.options[name] = options[name];
     }
-
-    this.init();
 };
 
 SimplybookWidget.prototype.init = function () {
@@ -214,11 +212,12 @@ SimplybookWidget.prototype.updateWidgetSize = function (data) {
 };
 
 SimplybookWidget.prototype.displayIframe = function () {
-    document.write(
+    const container = document.getElementById('booking-container');
+    container.innerHTML +=
         '<iframe scrolling="no" class="sb-widget-iframe" width="100%" border="0" frameborder="0" src="' + this.getUrl() + '" name="' + this.name + '" id="' + this.name + '"></iframe>'
-    );
+    ;
+    container.style.paddingTop = '0';
     this.frame = document.getElementById(this.name);
-
     this.subscribeMessages();
 };
 
