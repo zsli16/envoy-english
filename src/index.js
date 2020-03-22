@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, useLocation } from 'react-router-dom';
+import { BrowserRouter, useLocation, Route, Redirect } from 'react-router-dom';
 import {useEffect} from 'react';
+import SignupWidget from './views/signup-widget';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -19,7 +20,9 @@ function ScrollToTop() {
 ReactDOM.render(
   <BrowserRouter>
     <ScrollToTop/>
-    <App />
+    <Route exact path='/' component={App}/>
+    <Route exact path='/free-trial' component={SignupWidget}/>
+    <Redirect to='/'/>
   </BrowserRouter>
   , document.getElementById('root')
 );
