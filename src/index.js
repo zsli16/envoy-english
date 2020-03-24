@@ -23,13 +23,16 @@ function ScrollToTop() {
 ReactDOM.render(
   <BrowserRouter>
     <ScrollToTop/>
-    <Route exact path='/' component={App}/>
-    <Route path='/free-trial' component={SignupWidget}/>
-    <Route path='/missions' component={Missions}/>
-    <Route path='/trial-mission-briefing' component={TrialMissionBriefing}/>
-    <Route path='/free-class-code' component={FreeClassCode}/>
-    <Route path='/audio' component={SignupWidget}/>
-    <Route path='/apply' component={SignupWidget}/>
+    <Switch>
+      <Route exact path='/' component={App}/>
+      <Route path='/free-trial' component={SignupWidget}/>
+      <Route path='/missions' component={Missions}/>
+      <Route path='/trial-mission-briefing' component={TrialMissionBriefing}/>
+      <Route path='/free-class-code' component={FreeClassCode}/>
+      <Route path='/audio' component={SignupWidget}/>
+      <Route path='/apply' component={SignupWidget}/>
+      <Redirect to='/'/>
+    </Switch>
   </BrowserRouter>
   , document.getElementById('root')
 );
