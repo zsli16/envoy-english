@@ -7,6 +7,8 @@ import { BrowserRouter, useLocation, Route, Redirect, Switch } from 'react-route
 import {useEffect} from 'react';
 import SignupWidget from './views/signup-widget';
 import TrialMissionBriefing from './views/trial-mission-briefing';
+import PartyMissionBriefing from './views/party-mission-briefing';
+import TravelMissionBriefing from './views/travel-mission-briefing';
 import FreeClassCode from './views/free-class-code';
 import Missions from './views/missions';
 
@@ -28,6 +30,8 @@ ReactDOM.render(
       <Route path='/free-trial' component={SignupWidget}/>
       <Route path='/missions' component={Missions}/>
       <Route path='/trial-mission-briefing' component={TrialMissionBriefing}/>
+      <Route path='/party-mission-briefing' component={PartyMissionBriefing}/>
+      <Route path='/travel-mission-briefing' component={TravelMissionBriefing}/>
       <Route path='/free-class-code' component={FreeClassCode}/>
       <Route path='/audio' component={SignupWidget}/>
       <Route path='/apply' component={SignupWidget}/>
