@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Logo, Navbar, Button, NavbarButtons, ApplicationDeadline} from '../styles/ui-components';
+import {Logo, Navbar, Button, NavbarButtons, ApplicationDeadline, StyledBusinessLink} from '../styles/ui-components';
 import logo from '../assets/logo.png';
 
 //material

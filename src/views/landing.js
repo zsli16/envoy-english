@@ -138,7 +138,7 @@ class LandingPage extends Component {
         <h1>{messages.EmailForm.header}</h1>
         <Row>{messages.EmailForm.description}</Row>
         <Row>
-          <EmailForm/>
+          <EmailForm url={'https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=37'}/>
         </Row>
       </ColoredContainer>
       <Footer>

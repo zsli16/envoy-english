@@ -98,8 +98,6 @@ class BusinessProgram extends Component {
                   imgSrc = envoytraining;
                   break;
               }
-              console.log(mission.img)
-              console.log(imgSrc)
               return <BigCell key={i}>
                 <div>
                   <MissionCover src={imgSrc.toString()} alt="cover-image" />
@@ -121,9 +119,8 @@ class BusinessProgram extends Component {
       </Container>
       <ColoredContainer id="signup-business-form">
         <h1>{messages.EmailForm.header}</h1>
-        <Row>{messages.EmailForm.description}</Row>
         <Row>
-          <EmailForm/>
+          <EmailForm url={'https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=43'}/>
         </Row>
       </ColoredContainer>
       <Footer>

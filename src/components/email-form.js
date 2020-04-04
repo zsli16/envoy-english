@@ -6,7 +6,7 @@ class EmailForm extends Component {
   render() {
     return(
       <StyledEmailForm 
-        src="https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=37"
+        src={this.props.url}
         title='email-form'
         frameborder="0"
         scrolling="yes"
