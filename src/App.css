@@ -536,3 +536,7 @@
     transform: translate(0, 10px);
   }
 }
+
+.contact-link {
+  color: white;
+}

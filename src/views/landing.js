@@ -6,7 +6,7 @@ import Header from '../components/header';
 
 //styles
 import {Container, ColoredContainer, Footer, Row, Cell, Grid} from '../styles/layout';
-import {Button, Circle, LevelDescription, Tube} from '../styles/ui-components';
+import {Button, Circle, LevelDescription, Tube, MissionCover} from '../styles/ui-components';
 
 //content
 import EN from '../content/en.json';
@@ -16,6 +16,9 @@ import ES from '../content/es.json';
 import convo from '../assets/videocall.png';
 import obstacle from '../assets/obstacle.png';
 import missioncompleted from '../assets/missioncompleted.png';
+import annualevent from '../assets/annualevent_business.png';
+import finaldestination from '../assets/finaldestination_business.png';
+import hiringgame from '../assets/hiringgame_business.png';
 
 //icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -61,7 +64,7 @@ class LandingPage extends Component {
         </Row>
         <Row>
           <HashLink to="/#how-it-works"><Button>{messages.Hero.button_1}</Button></HashLink>
-          <Link to='/free-trial'><Button primary>{messages.Hero.button_2}</Button></Link>
+          <Link to='/apply'><Button primary>{messages.Hero.button_2}</Button></Link>
         </Row>
       </Container>
       <Container id="how-it-works">
@@ -117,22 +120,34 @@ class LandingPage extends Component {
         <Grid>
         {
           missionExamples.map((mission, i) => {
+            let imgSrc = annualevent;
+            switch(mission.img) {
+              case 'annualevent':
+                imgSrc = annualevent;
+                break;
+              case 'finaldestination':
+                imgSrc = finaldestination;
+                break;
+              case 'hiringgame':
+                imgSrc = hiringgame;
+                break;
+              default:
+                imgSrc = annualevent;
+                break;
+            }
             return <Cell key={i}>
               <div>
+                <img style={{width: '50%', borderRadius: '100%'}} src={imgSrc.toString()} alt="mission-cover"/>
                 <h4>{mission.title}</h4>
                 <h5>{mission.subtitle}</h5>
               </div>
               <div>
-                <p>{mission.levels}</p>
-                <Link to='/free-trial'><Button>{messages.UpcomingMissions.button_1}</Button></Link>
+                <Link to='/apply'><Button>{messages.UpcomingMissions.button_1}</Button></Link>
               </div>
             </Cell>
           })
         }
         </Grid>
-        <Row>
-          <Button primary><Link to="/missions">{messages.UpcomingMissions.button_2}</Link></Button>
-        </Row>
       </Container>
       <ColoredContainer>
         <h1>{messages.EmailForm.header}</h1>
@@ -143,8 +158,10 @@ class LandingPage extends Component {
       </ColoredContainer>
       <Footer>
         <h4>{messages.Contact.header}</h4>
-        <p><span><FontAwesomeIcon color='white' size="1x" icon={faPhoneAlt}/></span>  +52 55 8421 9934 (Whatsapp)</p>
-        <p><span><FontAwesomeIcon color='white' size="1x" icon={faEnvelope}/></span>  hello@envoyenglish.com</p>
+        <p><span><FontAwesomeIcon color='white' size="1x" icon={faPhoneAlt}/></span>  <a href="https://wa.me/5215584219934" className="contact-link">+52 55 8421 9934 (Whatsapp)</a></p>
+        <p><span><FontAwesomeIcon color='white' size="1x" icon={faEnvelope}/></span>  <a href="mailto:hello@envoyenglish.com" className="contact-link">hello@envoyenglish.com</a></p>
+        <br/>
+        <p style={{fontSize: '12px'}}>©️ 2020 Envoy English. All Rights Reserved.  Agave Commerce, LLC.</p>
       </Footer>
       </>
     );

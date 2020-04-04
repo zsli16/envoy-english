@@ -30,7 +30,7 @@ class Header extends Component {
           <Link to="/">
             <img src={logo} alt="logo" style={iconStyle}/>
           </Link>
-          <Logo>Envoy Education</Logo>
+          <Logo>Envoy English</Logo>
         </div>
         <NavbarButtons>
           {this.props.page === 'landing' &&

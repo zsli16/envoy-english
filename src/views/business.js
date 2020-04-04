@@ -104,7 +104,7 @@ class BusinessProgram extends Component {
                   <h4>{mission.title}</h4>
                   <p>{mission.subtitle}</p>
                 </div>
-                <div style={{width: '80%'}}>
+                <div style={{width: '85%'}}>
                   <h5 style={{textDecoration: 'underline'}}>{messages.BusinessProgram.learning_goals}</h5>
                   <ul>
                     <li>{mission.skill_1}</li>
@@ -125,8 +125,10 @@ class BusinessProgram extends Component {
       </ColoredContainer>
       <Footer>
         <h4>{messages.Contact.header}</h4>
-        <p><span><FontAwesomeIcon color='white' size="1x" icon={faPhoneAlt}/></span>  +52 55 8421 9934 (Whatsapp)</p>
-        <p><span><FontAwesomeIcon color='white' size="1x" icon={faEnvelope}/></span>  hello@envoyenglish.com</p>
+        <p><span><FontAwesomeIcon color='white' size="1x" icon={faPhoneAlt}/></span>  <a href="https://wa.me/5215584219934" className="contact-link">+52 55 8421 9934 (Whatsapp)</a></p>
+        <p><span><FontAwesomeIcon color='white' size="1x" icon={faEnvelope}/></span>  <a href="mailto:hello@envoyenglish.com" className="contact-link">hello@envoyenglish.com</a></p>
+        <br/>
+        <p style={{fontSize: '12px'}}>©️ 2020 Envoy English. All Rights Reserved.  Agave Commerce, LLC.</p>
       </Footer>
       </>
     );

@@ -63,34 +63,19 @@
   },
   "Missions": [
     {
-      "title": "Throwing a surprise party",
+      "title": "The Annual Event",
       "subtitle": "Coming to a group decision",
-      "levels": "A2, B1, B2"
+      "img": "annualevent"
     },
     {
-      "title": "The awkward dinner party",
-      "subtitle": "Practicing your conversation table manners",
-      "levels": "A2, B1"
+      "title": "Final Destination",
+      "subtitle": "Overcoming travel challenges",
+      "img": "finaldestination"
     },
     {
-      "title": "Getting lost in the city",
-      "subtitle": "Asking for directions",
-      "levels": "A1, A2, B1, B2"
-    },
-    {
-      "title": "You're going the wrong way!",
-      "subtitle": "Refuting the Uber driver",
-      "levels": "B1, B2"
-    },
-    {
-      "title": "Heavy accents",
-      "subtitle": "Deciphering English all around the world",
-      "levels": "B1, B2, C1"
-    },
-    {
-      "title": "The wrong reservation",
-      "subtitle": "Negotiating with service representative",
-      "levels": "B2, C1, C2"
+      "title": "Blind Date",
+      "subtitle": "Describing personality traits",
+      "img": "hiringgame"
     }
   ],
   "EmailForm": {
@@ -102,7 +87,7 @@
   },
   "Application": {
     "header": "Register for Our Beta Trial",
-    "tagline": "Find Your Level. Pick a Mission. Get Started!",
+    "tagline": "Find Your Level. Join a Mission. Get Started!",
     "description_1": "We are currently accepting applications for our Beta trial. To participate, please fill out the form below. This form will allow us to identify your English level and recommend Missions that are most suitable to you.",
     "description_2": "All of our Beta missions are Free! The only requirements are a computer with a camera, microphone, and a strong internet connection. Ready? Get started below.",
     "application_title": "Application for English Classes (Beta)",
@@ -150,33 +135,33 @@
       "title": "Envoy Training",
       "subtitle": "In this introductory Mission, you will learn technology tools and communication strategies to be successful in upcoming Missions.",
       "img": "envoytraining",
-      "skill_1": "Make basic introductions to native English speakers",
-      "skill_2": "Practice strategies when you don't know phrase or vocabulary to use",
-      "skill_3": "Learn to use Zoom"
+      "skill_1": "Practice introducing yourself to native English speakers. Develop rapport and mutual understanding.",
+      "skill_2": "Learn strategies to use when you don't understand or know what to say in English",
+      "skill_3": "Learn to use Zoom, a popular video conferencing software"
     },
     {
       "title": "The Annual Event",
       "subtitle": "Your team has been tasked with planning a special event, but not everyone in the company shares the same ideas. Can you work with your team to plan a successful event?",
       "img": "annualevent",
-      "skill_1": "Make basic introductions to native English speakers",
-      "skill_2": "Practice strategies when you don't know phrase or vocabulary to use",
-      "skill_3": "Learn to use Zoom"
+      "skill_1": "Brainstorm ideas in a team. Share and summarize information.",
+      "skill_2": "Practice using phrases to express opinions and preferences",
+      "skill_3": "Use correct tense for planning future events"
     },
     {
       "title": "Final Destination",
       "subtitle": "Your team must travel to New York to present a business proposal to a client Monday morning, but you encounter some challenges along the way. Can you make it to your final destination on time?",
       "img": "finaldestination",
-      "skill_1": "Make basic introductions to native English speakers",
-      "skill_2": "Practice strategies when you don't know phrase or vocabulary to use",
-      "skill_3": "Learn to use Zoom"
+      "skill_1": "Practice asking questions to uncover information. Identify and resolve problems.",
+      "skill_2": "Apply vocabulary related to travelling, distance, and schedules",
+      "skill_3": "Use correct tenses related to missed and upcoming events"
     },
     {
       "title": "The Hiring Game",
       "subtitle": "Your HR director needs your team's help to fill an upcoming vacancy, but not everyone agrees on the ideal candidate. Can you persuade others to make the best hiring decision?",
       "img": "hiringgame",
-      "skill_1": "Make basic introductions to native English speakers",
-      "skill_2": "Practice strategies when you don't know phrase or vocabulary to use",
-      "skill_3": "Learn to use Zoom"
+      "skill_1": "Describe someone's professional background, educational history, and personality traits",
+      "skill_2": "Persuade others of your point of view in a professional setting",
+      "skill_3": "Use adverbs of time to describe periods in the past and present"
     }
   ]
 }
