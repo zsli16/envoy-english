@@ -126,5 +126,57 @@
     "header": "Get your FREE Class Code",
     "tagline": "All Missions in the beta program are FREE with your unique discount code.",
     "description": "Register with a valid credit or debit card today. You will not pay anything - unless you miss a class you signed up for."
-  }
+  },
+  "Business": {
+    "header": "Join Our Business Partner Program",
+    "tagline": "Take your team's English to the next level",
+    "description": "We offer interactive, online classes that rapidly increase the ability of English learners to communicate effectively in a professional setting. Unlike traditional language classes, our fun, immersive experiences maximize student practice time and ensure that they never get bored of learning." 
+  },
+  "SpecialOffer": {
+    "header": "Special Offer for Business Partners",
+    "description": "For a limited time, we are offering select companies special access to our language training and cultural development program for the first month. Our online courses are designed to meet the needs of busy professionals and give them the skills needed to excel in the global workplace.",
+    "program": "Our Business Partner Program includes:",
+    "offer_1": "4 hour long classes led by a native English instructor each week",
+    "offer_2": "Pre & post assessment of English language & communication skills for all participating employees",
+    "offer_3": "Fun, interactive exercises designed to rapidly improve conversation skills",
+    "offer_4": "Individualized feedback, tips, and strategies for your team to improve"
+  },
+  "BusinessProgram": {
+    "header": "Business Partner Program",
+    "learning_goals": "Learning goals:"
+  },
+  "BusinessMissions": [
+    {
+      "title": "Envoy Training",
+      "subtitle": "In this introductory Mission, you will learn technology tools and communication strategies to be successful in upcoming Missions.",
+      "img": "envoytraining",
+      "skill_1": "Make basic introductions to native English speakers",
+      "skill_2": "Practice strategies when you don't know phrase or vocabulary to use",
+      "skill_3": "Learn to use Zoom"
+    },
+    {
+      "title": "The Annual Event",
+      "subtitle": "Your team has been tasked with planning a special event, but not everyone in the company shares the same ideas. Can you work with your team to plan a successful event?",
+      "img": "annualevent",
+      "skill_1": "Make basic introductions to native English speakers",
+      "skill_2": "Practice strategies when you don't know phrase or vocabulary to use",
+      "skill_3": "Learn to use Zoom"
+    },
+    {
+      "title": "Final Destination",
+      "subtitle": "Your team must travel to New York to present a business proposal to a client Monday morning, but you encounter some challenges along the way. Can you make it to your final destination on time?",
+      "img": "finaldestination",
+      "skill_1": "Make basic introductions to native English speakers",
+      "skill_2": "Practice strategies when you don't know phrase or vocabulary to use",
+      "skill_3": "Learn to use Zoom"
+    },
+    {
+      "title": "The Hiring Game",
+      "subtitle": "Your HR director needs your team's help to fill an upcoming vacancy, but not everyone agrees on the ideal candidate. Can you persuade others to make the best hiring decision?",
+      "img": "hiringgame",
+      "skill_1": "Make basic introductions to native English speakers",
+      "skill_2": "Practice strategies when you don't know phrase or vocabulary to use",
+      "skill_3": "Learn to use Zoom"
+    }
+  ]
 }

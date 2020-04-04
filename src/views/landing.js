@@ -57,7 +57,7 @@ class LandingPage extends Component {
         <h1>{messages.Hero.title}</h1>
         <h2>{messages.Hero.tagline}</h2>
         <Row>
-          <p id="hero-description">{messages.Hero.description}</p>
+          <p className="hero-description">{messages.Hero.description}</p>
         </Row>
         <Row>
           <HashLink to="/#how-it-works"><Button>{messages.Hero.button_1}</Button></HashLink>

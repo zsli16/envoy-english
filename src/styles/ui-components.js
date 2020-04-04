@@ -131,6 +131,11 @@ export const Circle = styled.div`
   font-family: 'Exo', sans-serif;
 `;
 
+export const MissionCover = styled.img`
+  width: 25%;
+  border-radius: 100%;
+`;
+
 export const StyledEmailForm = styled.iframe`
   position: relative;
   min-width: 100%;

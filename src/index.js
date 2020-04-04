@@ -10,6 +10,7 @@ import TrialMissionBriefing from './views/trial-mission-briefing';
 import PartyMissionBriefing from './views/party-mission-briefing';
 import TravelMissionBriefing from './views/travel-mission-briefing';
 import FreeClassCode from './views/free-class-code';
+import BusinessProgram from './views/business';
 import Missions from './views/missions';
 
 function ScrollToTop() {
@@ -35,6 +36,7 @@ ReactDOM.render(
       <Route path='/free-class-code' component={FreeClassCode}/>
       <Route path='/audio' component={SignupWidget}/>
       <Route path='/apply' component={SignupWidget}/>
+      <Route path='/business' component={BusinessProgram}/>
       <Redirect to='/'/>
     </Switch>
   </BrowserRouter>

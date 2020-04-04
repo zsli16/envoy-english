@@ -71,6 +71,42 @@ export const Cell = styled.div`
   text-align: center;
 `;
 
+export const BigCell = styled.div`
+  width: 40%;
+  min-width: 280px !important;
+  border: ${primary} 4px solid;
+  padding: 30px 20px;
+  margin: 0 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+`;
+
+export const WhiteCell = styled.div`
+  width: 90%;
+  min-width: 280px;
+  box-sizing: border-box;
+  line-height: 2;
+  border: white 4px solid;
+  padding: 50px;
+  padding-top: 20px; 
+  margin: 0 auto;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @media only screen and (min-width: 325px) and (max-width: 768px) {
+    h3 {
+      font-weight: 800;
+      font-size: 1.2em;
+    }
+  }
+`;
+
 export const Row = styled.div`
   width: 90%;
   display: flex;
