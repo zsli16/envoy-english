@@ -165,7 +165,6 @@ export const StyledDocs = styled.iframe`
 export const StyledApplicationForm = styled.iframe`
   position: relative;
   min-width: 100%;
-  height: 1880px;
   width: 100%;
   padding-bottom: 5%;
   height: ${p => p.height};
