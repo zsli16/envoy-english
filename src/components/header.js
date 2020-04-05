@@ -34,7 +34,7 @@ class Header extends Component {
         </div>
         <NavbarButtons>
           {this.props.page === 'landing' &&
-            <Link to='/free-trial'><Button primary>{this.props.buttonText}</Button></Link>
+            <Link to='/apply'><Button primary>{this.props.buttonText}</Button></Link>
           }
           {this.props.page === 'briefing' &&
             <a target='_blank' href={this.props.pdf}>
