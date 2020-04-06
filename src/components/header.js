@@ -53,8 +53,8 @@ class Header extends Component {
           }
           {(this.props.page === 'landing' || this.props.page === 'landing') &&
             <ApplicationDeadline>
-              {this.props.language === 'EN' && 'Beta program now available'}
-              {this.props.language === 'ES' && '¡Únete al Programa Beta!'}
+              {this.props.language === 'EN' && <Link id='business-sign-up' to='/business'>Join Our Business Partner Program</Link>}
+              {this.props.language === 'ES' && <Link id='business-sign-up' to='/business'>¡Únete al Programa de Business Partners!</Link>}
             </ApplicationDeadline>
           }
         </NavbarButtons>

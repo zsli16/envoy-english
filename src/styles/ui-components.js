@@ -4,11 +4,16 @@ import {primary} from './colors';
 export const ApplicationDeadline = styled.div`
   font-size: .8em;
   font-weight: 800;
-  text-transform: uppercase;
-  max-width: 250px;
+  text-transform: capitalize;
+  text-decoration: underline;
+  max-width: 150px;
   text-align: right;
   padding-right: 5%;
   color: ${primary};
+
+  &:hover {
+    text-decoration: none;
+  }
 
   @media only screen and (max-width: 512px) {
     display: none;
