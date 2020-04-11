@@ -163,5 +163,31 @@
       "skill_2": "Persuade others of your point of view in a professional setting.",
       "skill_3": "Use adverbs of time to describe periods in the past and present."
     }
-  ]
+  ],
+  "Pricing": {
+    "title": "Pricing",
+    "single": "Single Class",
+    "single_usp": "Most flexible option",
+    "package": "Monthly Package",
+    "package_usp": "Best for maximizing results",
+    "business": "For Business Partners",
+    "business_usp": "Custom training for your team",
+    "price_single": "$15 per class",
+    "price_package": "$50 per month",
+    "price_package_perclass": "(Only $12.50 per class!)",
+    "price_business": "Contact us",
+    "whats_included": "What's Included?",
+    "whats_included_single": "1 x English speaking Mission",
+    "whats_included_package": "4 x English speaking Missions",
+    "whats_included_business": "Personalized, private group classes",
+    "whats_included_smallgroup": "Maximum of 4 students per class",
+    "whats_included_instructor": "Led by a native English speaker instructor",
+    "whats_included_feedback": "Individualized feedback & tips to improve",
+    "beta_trial": "Join Beta Program for Free",
+    "get_quote": "Get a Quote"
+  },
+  "BetaProgram": {
+    "title": "About the Beta Program",
+    "description": "The Beta Program is a special offer for our first 250 students. To participate in the beta program, students must provide feedback after each class. All classes in beta program are free."
+  }
 }

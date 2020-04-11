@@ -13,6 +13,7 @@ import FreeClassCode from './views/free-class-code';
 import BusinessProgram from './views/business';
 import Missions from './views/missions';
 import Apply from './views/apply';
+import PricingTable from './views/pricing';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -38,6 +39,7 @@ ReactDOM.render(
       <Route path='/audio' component={SignupWidget}/>
       <Route path='/apply' component={Apply}/>
       <Route path='/business' component={BusinessProgram}/>
+      <Route path='/pricing' component={PricingTable}/>
       <Redirect to='/'/>
     </Switch>
   </BrowserRouter>

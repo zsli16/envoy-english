@@ -58,6 +58,18 @@ export const Grid = styled.div`
   justify-content: center;
 `;
 
+export const PricingCard = styled.div`
+  border: ${primary} 4px solid;
+  flex: 0 1 300px !important;
+  padding: 30px 20px;
+  margin: 0 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  text-align: left;
+`;
+
 export const Cell = styled.div`
   height: 18em;
   width: 14em;
