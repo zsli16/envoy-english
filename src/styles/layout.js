@@ -1,5 +1,5 @@
 import styled, {css} from 'styled-components';
-import {primary} from '../styles/colors';
+import {primary, secondary} from '../styles/colors';
 
 export const Container = styled.div`
   display: flex;
@@ -32,7 +32,20 @@ export const Container = styled.div`
 export const ColoredContainer = styled(Container)`
   background: ${primary};
   color: white;
-  padding-bottom: 0;
+  padding-bottom: 5%;
+
+  ${props => props.secondary && css`
+    background: ${secondary};
+    color: black;
+    padding-left: 20%;
+    padding-right: 20%;
+
+    @media only screen and (max-width: 768px) {
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-bottom: 10%;
+    }
+  `}
 `;
 
 export const Footer = styled.div`

@@ -1,10 +1,15 @@
 {
   "Hero": {
     "title": "Welcome to Envoy English",
-    "tagline": "Our Mission: Elevate Your English",
+    "tagline": "Elevate Your English on our Missions",
+    "description2": "Enough grammar books. It's time to practice English for the real world.",
     "description": "Improve your English conversation skills through live, interactive courses online. Each class features a Mission where you practice speaking in real-life simulations to overcome challenges.",
     "button_1": "How it works",
     "button_2": "Sign up"
+  },
+  "MissionAccomplished": {
+    "header": "Not Your Average Class",
+    "description": "Each Envoy English class features a Mission, an interactive game that allows you to practice English in a real-life scenario. Solve problems, work with teammates, and learn from native English instructors without leaving the house."
   },
   "HowItWorks": {
     "header": "How It Works",
@@ -19,9 +24,25 @@
     "section_tagline_3": "Elevate Your Language Skills",
     "section_description_3": "Each Mission is designed to increase your English speaking level. After the course, your instructor will send you personalized feedback with tips on how to keep improving. As you master the language, you will unlock higher level Missions. Are you up for the challenge?"
   },
+  "HowItWorks2": {
+    "signup": "1. Sign up for a Class",
+    "signup_description": "Register for the program, and then schedule your classes. Study when you want, where you want.",
+    "missionbriefing": "2. Read your Mission Briefing",
+    "missionbriefing_description": "After you sign up, we will send you a Mission Briefing with all of the vocabulary and information you need to succeed.",
+    "completemission": "3. Complete the Mission",
+    "completemission_description": "Join your class on Zoom, and start practicing English in a real life scenario! All of our classes are live, online group sessions led by a native English speaking instructor",
+    "getfeedback": "4. Get Personalized Feedback",
+    "getfeedback_description": "After your class, your instructor will send you personalized feedback with recommendations on how you can continue to improve."
+  },
+  "Results": {
+    "header": "Fun Classes, Real Results",
+    "description": "100% of our students agree that our classes are more effective than other English language learning methods they’ve tried."
+  },
   "Curriculum": {
     "header": "Our Curriculum",
-    "description": "Envoy English uses digital immersion and interactive challenges to improve your English. Each Mission is designed to increase your level of fluency, coherency, interaction, and range of expression, as defined by the internationally recognized Common European Framework of Reference for Languages (CEFR)."
+    "header2": "Practice at Your Level",
+    "description": "Envoy English uses digital immersion and interactive challenges to improve your English. Each Mission is designed to increase your level of fluency, coherency, interaction, and range of expression, as defined by the internationally recognized Common European Framework of Reference for Languages (CEFR)",
+    "description2": "After your first training Mission, we will send you your Envoy Level. All of the other classes you take will be with students at your same level so that you will always be able to learn and grow."
   },
   "Levels": [
     {
@@ -56,8 +77,8 @@
     }
   ],
   "UpcomingMissions": {
-    "header": "Upcoming English Speaking Missions",
-    "description": "Ready to embark on your English speaking journey? Enroll in an upcoming Mission for free. We match you to a team with your right language level.",
+    "header": "Choose Your Mission",
+    "description": "Ready to embark on your English speaking journey? Enroll in an upcoming Mission for free.",
     "button_1": "Join Mission",
     "button_2": "View More Missions"
   },
