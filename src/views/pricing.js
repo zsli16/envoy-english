@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Container, PricingCard, Row} from '../styles/layout';
+import {Link} from 'react-router-dom';
 import {Button} from '../styles/ui-components';
 
 //content
@@ -31,13 +32,13 @@ class PricingTable extends Component {
     return (
       <Container>
         <h1>{Pricing.title}</h1>
-        <Row style={{alignItems: 'center', flexWrap: 'wrap', height: '100%'}}>
+        <Row style={{alignItems: 'center', flexWrap: 'wrap', height: '100%', paddingTop: '2%'}}>
           <PricingCard>
             <h3>{Pricing.single}</h3>
             <h4>{Pricing.single_usp}</h4>
             <h2 style={{textAlign: 'left', fontWeight: '800'}}>{Pricing.price_single} </h2>
             <br/>
-            <Button primary>{Pricing.beta_trial}</Button>
+            <Link to='/apply'><Button primary>{Pricing.beta_trial}</Button></Link>
             <h4>{Pricing.whats_included}</h4>
             <div style={{margin: '0 5%'}}>
               <ul>
@@ -56,7 +57,7 @@ class PricingTable extends Component {
             <h4 style={{textAlign: 'left', fontWeight: '100', margin: '0'}}>{Pricing.price_package_perclass} </h4>
             </div>
             <br/>
-            <Button primary>{Pricing.beta_trial}</Button>
+            <Link to='/apply'><Button primary>{Pricing.beta_trial}</Button></Link>
             <h4>{Pricing.whats_included}</h4>
             <div style={{margin: '0 5%'}}>
               <ul>
@@ -72,7 +73,7 @@ class PricingTable extends Component {
             <h4>{Pricing.business_usp}</h4>
             <h2 style={{textAlign: 'left', fontWeight: '800'}}>{Pricing.price_business} </h2>
             <br/>
-            <Button primary>{Pricing.get_quote}</Button>
+            <Link to='/business'><Button primary>{Pricing.get_quote}</Button></Link>
             <h4>{Pricing.whats_included}</h4>
             <div style={{margin: '0 5%'}}>
               <ul>

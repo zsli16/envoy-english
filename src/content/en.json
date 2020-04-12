@@ -1,36 +1,23 @@
 {
   "Hero": {
     "title": "Welcome to Envoy English",
-    "tagline": "Our Mission: Elevate your English",
-    "description2": "Enough grammar books. It's time to practice English for the real world.",
-    "description": "Improve your English conversation skills through live, interactive courses online. Each class features a Mission where you practice speaking in real-life simulations to overcome challenges.",
+    "tagline": "English for the Real World",
+    "description": "Enough with boring language classes. Our interactive online Missions rapidly improve your English conversation skills and ability to communicate in real-life situations.",
     "button_1": "How it works",
     "button_2": "Sign up"
   },
   "MissionAccomplished": {
     "header": "Not Your Average Class",
-    "description": "Each Envoy English class features a Mission, an interactive game that allows you to practice English in a real-life scenario. Solve problems, work with teammates, and learn from native English instructors without leaving the house."
+    "description": "Solve problems, work with teammates, and learn from native English instructors without leaving the house."
   },
   "HowItWorks": {
     "header": "How It Works",
-    "description": "The best way to master a language is to immerse yourself in real-life situations, which often requires traveling abroad. With Envoy English, you can now practice speaking English at your level without leaving your home. Each Mission requires you to learn specific vocabulary, phrases, and strategies. You will then use what you’ve learned to communicate with your teammates and complete a challenge.",
-    "section_header_1": "Prepare for Your Mission",
-    "section_tagline_1": "Study Your Mission Briefing to Learn Key Phrases and Vocabulary",
-    "section_description_1": "Your Mission Briefing contains the words, phrases, and information crucial to your success. Prepare to use these new phrases in your upcoming Mission, and you’ll sound like a native English speaker in no time!",
-    "section_header_2": "Overcome Obstacles",
-    "section_tagline_2": "Use Your Language Skills to Solve Problems with Your Teammates",
-    "section_description_2": "In order to succeed, you must use all of your English communication skills and the new vocabulary you have learned. You will have to work closely with your teammates to complete each challenge by uncovering clues, asking questions, and agreeing upon a course of action. Your native English instructor will guide you along the way, but the success of the Mission depends on you.",
-    "section_header_3": "Mission Accomplished!",
-    "section_tagline_3": "Elevate Your Language Skills",
-    "section_description_3": "Each Mission is designed to increase your English speaking level. After the course, your instructor will send you personalized feedback with tips on how to keep improving. As you master the language, you will unlock higher level Missions. Are you up for the challenge?"
-  },
-  "HowItWorks2": {
     "signup": "1. Sign up for a Class",
     "signup_description": "Register for the program, and then schedule your classes. Study when you want, where you want.",
     "missionbriefing": "2. Read your Mission Briefing",
     "missionbriefing_description": "After you sign up, we will send you a Mission Briefing with all of the vocabulary and information you need to succeed.",
     "completemission": "3. Complete the Mission",
-    "completemission_description": "Join your class on Zoom, and start practicing English in a real life scenario! All of our classes are live, online group sessions led by a native English speaking instructor",
+    "completemission_description": "Join your class on Zoom, and start practicing English in a real life scenario! All of our classes are live, online group sessions led by a native English speaking instructor.",
     "getfeedback": "4. Get Personalized Feedback",
     "getfeedback_description": "After your class, your instructor will send you personalized feedback with recommendations on how you can continue to improve."
   },
@@ -39,17 +26,11 @@
     "description": "100% of our students agree that our classes are more effective than other English language learning methods they’ve tried."
   },
   "Curriculum": {
-    "header": "Our Curriculum",
-    "header2": "Practice at Your Level",
-    "description": "Envoy English uses digital immersion and interactive challenges to improve your English. Each Mission is designed to increase your level of fluency, coherency, interaction, and range of expression, as defined by the internationally recognized Common European Framework of Reference for Languages (CEFR)",
-    "description2": "After your first training Mission, we will send you your Envoy Level. All of the other classes you take will be with students at your same level so that you will always be able to learn and grow."
+    "header": "Practice at Your Level",
+    "description": "Sign up for a first training Mission to find your Envoy Level. Take classes with students at your same level so that you will always be able to learn and grow.",
+    "available_levels": "We are currently offering classes for the following language levels:"
   },
   "Levels": [
-    {
-      "level": "C2",
-      "title": "Master",
-      "description": "You can express yourself spontaneously, very fluently, and precisely."
-    },
     {
       "level": "C1",
       "title": "Ninja",
@@ -69,18 +50,12 @@
       "level": "A2",
       "title": "Pioneer",
       "description": "You can communicate to complete simple, routine tasks."
-    },
-    {
-      "level": "A1",
-      "title": "Novice",
-      "description": "You can use basic phrases to introduce yourself and ask simple questions"
     }
   ],
   "UpcomingMissions": {
     "header": "Choose Your Mission",
     "description": "Ready to embark on your English speaking journey? Enroll in an upcoming Mission for free.",
-    "button_1": "Join Mission",
-    "button_2": "View More Missions"
+    "button_1": "Join Mission"
   },
   "Missions": [
     {
@@ -204,7 +179,7 @@
     "whats_included_smallgroup": "Maximum of 4 students per class",
     "whats_included_instructor": "Led by a native English speaker instructor",
     "whats_included_feedback": "Individualized feedback & tips to improve",
-    "beta_trial": "Join Beta Program for Free",
+    "beta_trial": "Join Free Beta Trial",
     "get_quote": "Get a Quote"
   },
   "BetaProgram": {

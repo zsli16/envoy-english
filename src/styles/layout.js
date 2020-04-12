@@ -95,7 +95,7 @@ export const Cell = styled.div`
   margin: 0 10px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
 `;
