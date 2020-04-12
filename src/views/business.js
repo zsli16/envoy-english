@@ -1,17 +1,14 @@
 import React, {Component} from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import {Container, Grid, BigCell, WhiteCell, Footer, Row, ColoredContainer} from '../styles/layout';
+import {Container, Grid, BigCell, WhiteCell, Row, ColoredContainer} from '../styles/layout';
 import {Button, MissionCover} from '../styles/ui-components';
 import EmailForm from '../components/email-form';
 import Header from '../components/header';
+import Footer from '../components/footer';
 
 //content
 import EN from '../content/en.json';
 import ES from '../content/es.json';
-
-//icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
 //images
 import envoytraining from '../assets/envoytraining_business.png';
@@ -123,13 +120,7 @@ class BusinessProgram extends Component {
           <EmailForm url={'https://services.cognitoforms.com/f/neg3yezHME-sqGKAznf3rA?id=43'}/>
         </Row>
       </ColoredContainer>
-      <Footer>
-        <h4>{messages.Contact.header}</h4>
-        <p><span><FontAwesomeIcon color='white' size="1x" icon={faPhoneAlt}/></span>  <a href="https://wa.me/5215584219934" className="contact-link">+52 55 8421 9934 (Whatsapp)</a></p>
-        <p><span><FontAwesomeIcon color='white' size="1x" icon={faEnvelope}/></span>  <a href="mailto:hello@envoyenglish.com" className="contact-link">hello@envoyenglish.com</a></p>
-        <br/>
-        <p style={{fontSize: '12px'}}>©️ 2020 Envoy English. All Rights Reserved.  Agave Commerce, LLC.</p>
-      </Footer>
+      <Footer header={messages.Contact.header}/>
       </>
     );
   }

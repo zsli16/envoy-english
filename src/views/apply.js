@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import {HashLink} from 'react-router-hash-link';
 import Header from '../components/header';
+import Footer from '../components/footer';
 
 //content
 import EN from '../content/en.json';
@@ -60,6 +61,7 @@ class Application extends Component {
           title='application'          
         />
       </Container>
+      <Footer header={messages.Contact.header}/>
       </>
     );
   }

@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {Container, Row} from '../styles/layout';
 import Header from '../components/header';
+import Footer from '../components/footer';
 import SimplybookWidget from '../components/simplybookwidget';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-
 
 //content
 import EN from '../content/en.json';
@@ -53,6 +53,7 @@ class SignupWidget extends Component {
       </Row>
       </Container>
       <Container id="booking-container"/>
+      <Footer header={messages.Contact.header}/>
       </>
     );
   }

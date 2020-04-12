@@ -3,6 +3,7 @@ import {Container, Row} from '../styles/layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import Header from '../components/header';
+import Footer from '../components/footer';
 
 //content
 import EN from '../content/en.json';
@@ -59,6 +60,7 @@ class FreeClassCode extends Component {
           width="100%"        
         />
       </Container>
+      <Footer header={messages.Contact.header}/>
       </>
     );
   }
