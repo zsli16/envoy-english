@@ -81,6 +81,10 @@ export const PricingCard = styled.div`
   justify-content: space-between;
   align-items: left;
   text-align: left;
+
+  @media only screen and (min-width: 325px) and (max-width: 768px) {
+    min-height: 480px;
+  }
 `;
 
 export const Cell = styled.div`

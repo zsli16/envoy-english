@@ -31,7 +31,7 @@ class PricingTable extends Component {
     return (
       <Container>
         <h1>{Pricing.title}</h1>
-        <Row style={{alignItems: 'center', flexWrap: 'wrap'}}>
+        <Row style={{alignItems: 'center', flexWrap: 'wrap', height: '100%'}}>
           <PricingCard>
             <h3>{Pricing.single}</h3>
             <h4>{Pricing.single_usp}</h4>
@@ -48,7 +48,7 @@ class PricingTable extends Component {
               </ul>
             </div>
           </PricingCard>
-          <PricingCard>
+          <PricingCard style={{boxShadow: '0px 0px 13px 9px #a9a7a7'}}>
             <h3>{Pricing.package}</h3>
             <h4>{Pricing.package_usp}</h4>
             <div>
@@ -83,9 +83,7 @@ class PricingTable extends Component {
               </ul>
             </div>
           </PricingCard>
-          
         </Row>
-
       </Container>
     );
   }

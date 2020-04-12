@@ -84,7 +84,7 @@ class LandingPage2 extends Component {
         <h1>{messages.HowItWorks.header}</h1>
         <Grid>
           <Cell style={{border: 'none', height: 'auto'}}>
-            <img style={{width: '100%', height: '100%', maxWidth: '150px', borderRadius: '100%'}} src={ScheduleClass} alt="how-it-works"/>
+            <img style={{width: '100%', height: '100%', maxHeight: '150px', maxWidth: '150px', borderRadius: '100%'}} src={ScheduleClass} alt="how-it-works"/>
             <h4>{messages.HowItWorks2.signup}</h4>
             <h5 style={{textAlign: 'left', margin: '0' }}>{messages.HowItWorks2.signup_description}</h5>
           </Cell>
@@ -163,7 +163,7 @@ class LandingPage2 extends Component {
           })}
         </Container>
       </ColoredContainer>
-      {/* <PricingTable/> */}
+      <PricingTable/>
       <Footer>
         <h4>{messages.Contact.header}</h4>
         <p><span><FontAwesomeIcon color='white' size="1x" icon={faPhoneAlt}/></span>  <a href="https://wa.me/5215584219934" className="contact-link">+52 55 8421 9934 (Whatsapp)</a></p>
