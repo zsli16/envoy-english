@@ -161,7 +161,7 @@ class LandingPage2 extends Component {
           })}
         </Container>
       </ColoredContainer>
-      <PricingTable/>
+      <PricingTable translations={messages.Pricing}/>
       <Footer header={messages.Contact.header}/>
       </>
     );

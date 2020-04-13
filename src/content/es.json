@@ -1,34 +1,36 @@
 {
   "Hero": {
     "title": "Bienvenido a Envoy English",
-    "tagline": "Nuestra Misión: Elevar tu Inglés",
-    "button_1": "Cómo Funciona",
-    "button_2": "Prueba Gratis",
-    "description": "Mejora tus habilidades de conversación en inglés a través de cursos interactivos en vivo en línea. Cada clase presenta una Misión que requiere que superes retos y practiques hablar en un ambiente de la vida real."
+    "tagline": "Inglés para el mundo real",
+    "description": "Ya no más clases aburridas. Con nuestras Misiones interactivas en línea, puedes mejorar rápidamente tus habilidades de conversación en inglés y tu capacidad de comunicarte en situaciones de la vida real.",
+    "button_1": "Cómo funciona",
+    "button_2": "Inscríbete"
+  },
+  "MissionAccomplished": {
+    "header": "No es la clase típica",
+    "description": "Resuelve problemas, trabaja con compañeros de equipo, y practica con instructores nativos de inglés, todo sin tener que salir de casa."
   },
   "HowItWorks": {
-    "header": "Cómo Funciona",
-    "description": "La mejor manera de dominar un idioma es sumergirse en situaciones de la vida real, que a menudo requiere viajar al extranjero. Con Envoy English, ahora puedes practicar hablar inglés a tu nivel sin salir de casa. Cada Misión requiere que aprendas vocabulario, frases, y estrategias específicas. Luego usarás lo que has aprendido para comunicarte con tus compañeros de equipo y superar un reto.",
-    "section_header_1": "Prepárate para tu Misión",
-    "section_tagline_1": "Estudia el Informe de Misión para Aprender Frases Clave y Vocabulario",
-    "section_description_1": "El Informe de Misión contiene las palabras, frases, e información cruciales para tu éxito. Prepárate para usar estas nuevas frases en tu próxima Misión, y sonarás como un hablante nativo de inglés en poco tiempo.",
-    "section_header_2": "Supera los Obstáculos",
-    "section_tagline_2": "Usa tus Habilidades Lingüísticas para Resolver Problemas con tus Compañeros de Equipo",
-    "section_description_2": "Para tener éxito, debes usar todas tus habilidades de comunicación en inglés y el nuevo vocabulario que has aprendido. Tendrás que trabajar en equipo con tus compañeros para completar cada reto. Tendrán que descubrir pistas, hacer preguntas, y tomar decisiones. Tu instructor nativo de inglés guiará la sesión, pero el éxito de la Misión depende de ti.",
-    "section_header_3": "Misión cumplida!",
-    "section_tagline_3": "Eleva tus Habilidades Lingüísticas",
-    "section_description_3": "Cada Misión está diseñada para aumentar tu nivel de inglés. Después del curso, tu instructor te enviará comentarios personalizados con consejos sobre cómo seguir mejorando. Mientras avances en el idioma, desbloquearás Misiones más complicadas. ¿Estás preparado para el reto?"
+    "header": "Cómo funciona",
+    "signup": "1. Inscríbete en una clase",
+    "signup_description": "Regístrate en el programa, y agenda tus clases. Puedes estudiar cuando quieras, donde quieras.",
+    "missionbriefing": "2. Lee tu Mission Briefing",
+    "missionbriefing_description": "Después de que te registras, te enviaremos un Mission Briefing,  o Informe de la Misión, con todo el vocabulario y la información que necesitas para tener éxito.",
+    "completemission": "3. Completa la Misión",
+    "completemission_description": "¡Únete a tu clase en Zoom y comienza a practicar inglés en un escenario de la vida real! Todas nuestras clases son sesiones grupales en vivo en línea dirigidas por un instructor nativo de inglés.",
+    "getfeedback": "4. Recibe retroalimentación personalizada",
+    "getfeedback_description": "Después de la clase, tu instructor te enviará comentarios personalizados con recomendaciones sobre cómo puedes continuar mejorando."
+  },
+  "Results": {
+    "header": "Clases divertidas, resultados reales",
+    "description": "El 100% de nuestros estudiantes está de acuerdo en que nuestras clases son más efectivas que otros métodos de aprendizaje del idioma inglés que han probado."
   },
   "Curriculum": {
-    "header": "Nuestro Plan de Estudios",
-    "description": "Envoy English utiliza inmersión digital y desafíos interactivos para mejorar tu inglés. Cada Misión está diseñada para aumentar tu nivel de fluidez, coherencia, interacción, y rango de expresión, de acuerdo con las definiciones de nivel en el Marco de Referencia Común Europeo para las Lenguas (MCER), lo cual es reconocido internacionalmente."
+    "header": "Practica a tu nivel",
+    "description": "Regístrate para la primera Misión de entrenamiento para encontrar tu nivel. Luego tomarás clases con estudiantes de tu mismo nivel para siempre poder aprender y crecer.",
+    "available_levels": "Actualmente estamos ofreciendo clases para los siguientes niveles de inglés:"
   },
   "Levels": [
-    {
-      "level": "C2",
-      "title": "Master",
-      "description": "Puedes expresarte espontáneamente, con mucha fluidez y precisión."
-    },
     {
       "level": "C1",
       "title": "Ninja",
@@ -42,39 +44,33 @@
     {
       "level": "B1",
       "title": "Messenger",
-      "description": "Puedes comunicar mensajes sobre actividades diarias y resolver problemas"
+      "description": "Puedes comunicar mensajes sobre actividades diarias y resolver problemas."
     },
     {
       "level": "A2",
       "title": "Pioneer",
-      "description": "Puedes comunicarte para completar tareas simples y rutinarias."
-    },
-    {
-      "level": "A1",
-      "title": "Novice",
-      "description": "Puedes usar frases básicas para presentarte y hacer preguntas simples."
+      "description": "Puedes comunicar mensajes sobre actividades diarias y resolver problemas."
     }
   ],
   "UpcomingMissions": {
-    "header": "Próximas Misiones",
-    "description": "¿Listo para empezar tu aventura en inglés? Inscríbete en una Misión de forma gratuita. Te colocaremos con un equipo de tu mismo nivel.",
-    "button_1": "Únete a la Misión",
-    "button_2": "Ver Más Misiones"
+    "header": "Elige tu Misión",
+    "description": "¿Listo para empezar tu aventura en inglés? Inscríbete en una Misión de forma gratuita.",
+    "button_1": "Únete a la Misión"
   },
   "Missions": [
     {
-      "title": "El Evento Anual",
-      "subtitle": "Llegando a una decisión en grupo",
+      "title": "The Annual Event",
+      "subtitle": "Llegar a un acuerdo en grupo.",
       "img": "annualevent"
     },
     {
-      "title": "Destino Final",
-      "subtitle": "Enfrentar retos en un viaje",
+      "title": "Final Destination",
+      "subtitle": "Superar retos de viaje.",
       "img": "finaldestination"
     },
     {
-      "title": "Cita a Ciegas",
-      "subtitle": "Describir características de personalidad",
+      "title": "Blind Date",
+      "subtitle": "Describir características de personalidad.",
       "img": "hiringgame"
     }
   ],
@@ -86,15 +82,15 @@
     "header": "Contáctanos"
   },
   "Application": {
-    "header": "Regístrate para Nuestra Fase Beta",
-    "tagline": "Encuentra tu Nivel. Elige una Misión. ¡Comienza!",
+    "header": "Regístrate para nuestra fase beta",
+    "tagline": "Encuentra tu nivel. Elige una Misión. ¡Comienza!",
     "description_1": "Actualmente estamos aceptando solicitudes para nuestra fase beta. Para participar, sólo tienes que rellenar el siguiente formulario. Este formulario nos permitirá identificar tu nivel de inglés y recomendar las Misiones adecuadas para ti.",
     "description_2": "¡Todas nuestras Misiones Beta son gratis! Los únicos requisitos son una computadora con cámara, micrófono y una buena conexión de internet.",
     "application_title": "La aplicación para el programa beta",
     "deadline": "¡Aceptando aplicaciones para el programa beta!"
   },
   "Audio": {
-    "header": "Prepárate para tu Primera Clase",
+    "header": "Prepárate para tu primera clase",
     "tagline": "Ayúdanos a verificar tu nivel",
     "description": "Para completar tu aplicación, favor de entregar un mensaje de voz en inglés de 1-3 minutos hablando de un viaje que tomaste últimamente.",
     "option_1": "Subir tu archivo de audio aquí",
@@ -102,35 +98,34 @@
     "or": "O"
   },
   "FreeTrial": {
-    "header": "¡Bienvenido al Programa Beta!",
-    "tagline": "Inscríbete en tu Primera Misión",
+    "header": "¡Bienvenido al programa beta!",
+    "tagline": "Inscríbete en tu primera Misión",
     "description": "Practica tu inglés en una Misión de capacitación, y aprende cómo tener éxito en nuestras clases. Después de la clase, recibirás retroalimentación personalizada sobre tu nivel de inglés actual y consejos sobre cómo mejorar.",
-    "button": "Inscríbete Ahora"
+    "button": "Inscríbete ahora"
   },
   "FreeClassCode": {
-    "header": "Consigue tu Código para Clases GRATIS",
+    "header": "Consigue tu código para clases GRATIS",
     "tagline": "Todas las Misiones en el programa beta son gratuitas con tu código de descuento único.",
     "description": "Regístrate hoy con una tarjeta válida de crédito o débito para obtener tu código. No pagarás nada, a menos que te pierdes una clase en la que te inscribiste."
   },
   "Business": {
-    "header": "Únete a Nuestro Programa de Business Partners",
+    "header": "Únete a nuestro programa de Business Partners",
     "tagline": "Lleva el inglés de tu equipo al próximo nivel",
     "description": "Ofrecemos clases interactivas en línea que rápidamente mejoran la comunicación en inglés de los estudiantes. A diferencia de las clases de idiomas tradicionales, nuestras experiencias divertidas e inmersivas maximizan el tiempo de práctica de los estudiantes y aseguran que nunca se aburran del aprendizaje." 
   },
   "SpecialOffer": {
-    "header": "Oferta Especial para Business Partners",
+    "header": "Oferta especial para Business Partners",
     "description": "Por tiempo limitado, a ciertas compañías les estamos ofreciendo acceso especial a nuestro programa de capacitación lingüística y desarrollo cultural. Nuestros cursos están diseñados para cumplir con las necesidades de profesionales ocupados y brindarles las habilidades necesarias para sobresalir en una carrera global.",
-    "program": "Nuestro Programa de Business Partners incluye:",
-    "offer_1": "4 clases en vivo en línea dirigidas por un instructor nativo de inglés",
-    "offer_2": "Evaluación de inglés antes y después del curso para todos los participantes",
+    "program": "Nuestro programa de Business Partners incluye:",
+    "offer_1": "Evaluación de inglés antes y después del curso para todos los participantes",
+    "offer_2": "4 clases en vivo en línea dirigidas por un instructor nativo de inglés",
     "offer_3": "Ejercicios divertidos e interactivos diseñados para mejorar rápidamente las habilidades de conversación",
     "offer_4": "Retroalimentación personalizada, consejos y estrategias para mejorar el nivel de tu equipo"
   },
   "BusinessProgram": {
-    "header": "El Programa de Business Partners",
-   "learning_goals": "Metas de Aprendizaje:"
+    "header": "El programa de Business Partners"
   },
-  "BusinessMissions": [
+  "BussinessMissions": [
     {
       "title": "Envoy Training",
       "subtitle": "En esta Misión introductoria, aprenderás herramientas tecnológicas y estrategias de comunicación para tener éxito en las próximas Misiones.",
@@ -143,7 +138,7 @@
       "title": "The Annual Event",
       "subtitle": "Tu equipo se ha encargado de planificar un evento especial, pero no todos en la empresa comparten las mismas ideas. ¿Puedes trabajar con tu equipo para planificar un evento exitoso?",
       "img": "annualevent",
-      "skill_1": "Generar ideas en equipo. Compartir y resumir información.",
+    "skill_1": "Generar ideas en equipo. Compartir y resumir información.",
       "skill_2": "Usar frases para expresar opiniones y preferencias.",
       "skill_3": "Usar el tiempo correcto para planear eventos en el futuro."
     },
@@ -163,5 +158,31 @@
       "skill_2": "Convencer a otros de tu punto de vista en una junta profesional.",
       "skill_3": "Usar adverbios de tiempo para describir períodos en el pasado y el presente."
     }
-  ]
+  ],
+  "Pricing": {
+    "title": "Precios",
+    "single": "Clase individual",
+    "single_usp": "Opción más flexible",
+    "package": "Paquete mensual",
+    "package_usp": "Mejor para maximizar resultados",
+    "business": "Para Business Partners",
+    "business_usp": "Capacitación personalizada para tu equipo",
+    "price_single": "$15 para 1 clase",
+    "price_package": "$50 para 4 clases",
+    "price_package_perclass": "(Ahorra $2.50USD cada clase.)",
+    "price_business": "Contáctanos",
+    "whats_included": "¿Qué incluye?",
+    "whats_included_single": "1 x Misión de conversación en inglés",
+    "whats_included_package": "4 x Misión de conversación en inglés",
+    "whats_included_business": "Clases grupales personalizadas y privadas",
+    "whats_included_smallgroup": "Máximo 4 alumnos por clase.",
+    "whats_included_instructor": "Clases enseñadas por un instructor nativo en inglés",
+    "whats_included_feedback": "Comentarios y consejos individualizados sobre cómo mejorar",
+    "beta_trial": "Únete a la fase beta",
+    "get_quote": "Cotizar"
+  },
+  "BetaProgram": {
+    "title": "Sobre el programa beta",
+    "description": "El programa beta es una oferta especial para nuestros primeros 250 estudiantes. Para participar en el programa beta, los estudiantes tienen que rellenar un formulario de retroalimentación después de cada clase. Todas las clases en el programa beta son gratis."
+  }
 }

@@ -3,31 +3,11 @@ import {Container, PricingCard, Row} from '../styles/layout';
 import {Link} from 'react-router-dom';
 import {Button} from '../styles/ui-components';
 
-//content
-import EN from '../content/en.json';
-import ES from '../content/es.json';
-
-const translations = {EN, ES};
-
 class PricingTable extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      language: 'EN',
-      messages: EN
-    }
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleChange(event) {
-    const lang = event.target.value;
-    this.setState({language: lang});
-    this.setState({messages: translations[lang]});
-  }
 
   render() {
-    const {messages} = this.state;
-    const {Pricing} = messages;
+    const {translations} = this.props;
+    const Pricing = translations;
 
     return (
       <Container>
