@@ -86,17 +86,17 @@ class LandingPage2 extends Component {
             <h5 style={{textAlign: 'left', margin: '0' }}>{messages.HowItWorks.signup_description}</h5>
           </Cell>
           <Cell style={{border: 'none', height: 'auto'}}>
-            <img style={{width: '100%', height: '100%', maxWidth: '150px', borderRadius: '100%'}} src={MissionBriefing} alt="how-it-works"/>
+            <img style={{width: '100%', height: '100%', maxHeight: '150px',maxWidth: '150px', borderRadius: '100%'}} src={MissionBriefing} alt="how-it-works"/>
             <h4>{messages.HowItWorks.missionbriefing}</h4>
             <h5 style={{textAlign: 'left', margin: '0' }}>{messages.HowItWorks.missionbriefing_description}</h5>
           </Cell>
           <Cell style={{border: 'none', height: 'auto'}}>
-            <img style={{width: '100%', height: '100%',maxWidth: '150px', borderRadius: '100%'}} src={CompleteMission} alt="how-it-works"/>
+            <img style={{width: '100%', height: '100%', maxHeight: '150px', maxWidth: '150px', borderRadius: '100%'}} src={CompleteMission} alt="how-it-works"/>
             <h4>{messages.HowItWorks.completemission}</h4>
             <h5 style={{textAlign: 'left', margin: '0' }}>{messages.HowItWorks.completemission_description}</h5>
           </Cell>
           <Cell style={{border: 'none', height: 'auto'}}>
-            <img style={{width: '100%', height: '100%', maxWidth: '150px', borderRadius: '100%'}} src={PersonalizedFeedback} alt="how-it-works"/>
+            <img style={{width: '100%', height: '100%', maxHeight: '150px', maxWidth: '150px', borderRadius: '100%'}} src={PersonalizedFeedback} alt="how-it-works"/>
             <h4>{messages.HowItWorks.getfeedback}</h4>
             <h5 style={{textAlign: 'left', margin: '0' }}>{messages.HowItWorks.getfeedback_description}</h5>
           </Cell>
@@ -131,7 +131,7 @@ class LandingPage2 extends Component {
                 imgSrc = annualevent;
                 break;
             }
-            return <Cell key={i}>
+            return <Cell key={i} style={{justifyContent: 'space-evenly'}}>
               <div>
                 <img style={{width: '50%', borderRadius: '100%'}} src={imgSrc.toString()} alt="mission-cover"/>
                 <h4>{mission.title}</h4>

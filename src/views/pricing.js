@@ -17,6 +17,9 @@ class PricingTable extends Component {
             <h3>{Pricing.single}</h3>
             <h4>{Pricing.single_usp}</h4>
             <h2 style={{textAlign: 'left', fontWeight: '800'}}>{Pricing.price_single} </h2>
+            {
+              Pricing.single_class && <h4 style={{textAlign: 'left', fontWeight: '100', margin: '0'}}>{Pricing.single_class}</h4>
+            }
             <br/>
             <Link to='/apply'><Button primary>{Pricing.beta_trial}</Button></Link>
             <h4>{Pricing.whats_included}</h4>
@@ -34,7 +37,12 @@ class PricingTable extends Component {
             <h4>{Pricing.package_usp}</h4>
             <div>
             <h2 style={{textAlign: 'left', fontWeight: '800'}}>{Pricing.price_package} </h2>
-            <h4 style={{textAlign: 'left', fontWeight: '100', margin: '0'}}>{Pricing.price_package_perclass} </h4>
+            {
+              Pricing.price_package_perclass && <h4 style={{textAlign: 'left', fontWeight: '100', margin: '0'}}>{Pricing.price_package_perclass} </h4>
+            }
+            {
+              Pricing.package_classes && <h4 style={{textAlign: 'left', fontWeight: '100', margin: '0'}}>{Pricing.package_classes}</h4>
+            }
             </div>
             <br/>
             <Link to='/apply'><Button primary>{Pricing.beta_trial}</Button></Link>
