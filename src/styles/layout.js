@@ -73,7 +73,7 @@ export const Grid = styled.div`
 
 export const PricingCard = styled.div`
   border: ${primary} 4px solid;
-  flex: 0 1 300px !important;
+  flex: 0 1 255px !important;
   padding: 30px 20px;
   margin: 0 10px 20px;
   display: flex;
@@ -81,6 +81,11 @@ export const PricingCard = styled.div`
   justify-content: space-between;
   align-items: left;
   text-align: left;
+  min-width: 250px;
+
+  h2 {
+    font-size: 2.1em;
+  }
 
   @media only screen and (min-width: 325px) and (max-width: 768px) {
     min-height: 480px;

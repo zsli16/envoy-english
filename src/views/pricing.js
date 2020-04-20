@@ -10,7 +10,7 @@ class PricingTable extends Component {
     const Pricing = translations;
 
     return (
-      <Container>
+      <Container style={{marginLeft: '0px', marginRight: '0px'}}>
         <h1>{Pricing.title}</h1>
         <Row style={{alignItems: 'center', flexWrap: 'wrap', height: '100%', paddingTop: '2%'}}>
           <PricingCard>
@@ -32,7 +32,7 @@ class PricingTable extends Component {
               </ul>
             </div>
           </PricingCard>
-          <PricingCard style={{boxShadow: '0px 0px 13px 9px #a9a7a7'}}>
+          <PricingCard style={{minWidth: '280px', boxShadow: '0px 0px 13px 9px #a9a7a7'}}>
             <h3>{Pricing.package}</h3>
             <h4>{Pricing.package_usp}</h4>
             <div>
@@ -56,7 +56,7 @@ class PricingTable extends Component {
               </ul>
             </div>
           </PricingCard>
-          <PricingCard>
+          <PricingCard style={{minHeight: '490px'}}>
             <h3>{Pricing.business}</h3>
             <h4>{Pricing.business_usp}</h4>
             <h2 style={{textAlign: 'left', fontWeight: '800'}}>{Pricing.price_business} </h2>
@@ -67,7 +67,6 @@ class PricingTable extends Component {
               <ul>
                 <li>{Pricing.whats_included_business}</li>
                 <li>{Pricing.whats_included_instructor}</li>
-                <li>{Pricing.whats_included_smallgroup}</li>
                 <li>{Pricing.whats_included_feedback}</li>
               </ul>
             </div>
