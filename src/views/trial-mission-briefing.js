@@ -6,7 +6,7 @@ class TrialMissionBriefing extends Component {
     super(props);
     this.state = {
       language: 'EN',
-      pdf: 'https://drive.google.com/open?id=14SLwU9qZWlO20WkEGfu5mbk150kyB-2u'
+      pdf: 'https://drive.google.com/open?id=1YSCoByXdhtGIz0a5yQ8CbSl7F5UVVjbt'
     }
     this.handleChange = this.handleChange.bind(this);
   }
@@ -22,12 +22,12 @@ class TrialMissionBriefing extends Component {
     this.setState({language: lang});
     const iframe = document.getElementById('briefing')
     if (lang === 'EN') {
-      iframe.setAttribute("src", "https://drive.google.com/file/d/14SLwU9qZWlO20WkEGfu5mbk150kyB-2u/preview");
-      this.setState({pdf: 'https://drive.google.com/open?id=14SLwU9qZWlO20WkEGfu5mbk150kyB-2u'})
+      iframe.setAttribute("src", "https://drive.google.com/file/d/1YSCoByXdhtGIz0a5yQ8CbSl7F5UVVjbt/preview");
+      this.setState({pdf: 'https://drive.google.com/open?id=1YSCoByXdhtGIz0a5yQ8CbSl7F5UVVjbt'})
     }
     if (lang === 'ES') {
-      iframe.setAttribute("src", "https://drive.google.com/file/d/1zGtuiP1QAet0qEObbL4Cxn_C4DPhOsZy/preview");
-      this.setState({pdf: 'https://drive.google.com/file/d/1zGtuiP1QAet0qEObbL4Cxn_C4DPhOsZy'})
+      iframe.setAttribute("src", "https://drive.google.com/file/d/1c0kc3cN29ucYJOZTzSfJBTxKEipC2i0Y/preview");
+      this.setState({pdf: 'https://drive.google.com/file/d/1c0kc3cN29ucYJOZTzSfJBTxKEipC2i0Y'})
     }
   }
 
@@ -44,7 +44,7 @@ class TrialMissionBriefing extends Component {
       <div style={{height: '100vh', width: '100vw'}}>
         <iframe
           id = 'briefing'
-          src= "https://drive.google.com/file/d/14SLwU9qZWlO20WkEGfu5mbk150kyB-2u/preview"
+          src= "https://drive.google.com/file/d/1YSCoByXdhtGIz0a5yQ8CbSl7F5UVVjbt/preview"
           width="100%"
           seamless='seamless'
           overflow='hidden'
