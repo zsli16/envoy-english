@@ -14,6 +14,7 @@ import BusinessProgram from './views/business';
 import Missions from './views/missions';
 import Apply from './views/apply';
 import PricingTable from './views/pricing';
+import FeedbackForm from './views/feedback';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -39,6 +40,7 @@ ReactDOM.render(
       <Route path='/audio' component={SignupWidget}/>
       <Route path='/apply' component={Apply}/>
       <Route path='/business' component={BusinessProgram}/>
+      <Route path='/feedback' component={FeedbackForm}/>
       {/* <Route path='/pricing' component={PricingTable}/> */}
       <Redirect to='/'/>
     </Switch>
