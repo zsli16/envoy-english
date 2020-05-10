@@ -39,7 +39,7 @@ ReactDOM.render(
       <Route path='/audio' component={SignupWidget}/>
       <Route path='/apply' component={Apply}/>
       <Route path='/business' component={BusinessProgram}/>
-      <Route path='/pricing' component={PricingTable}/>
+      {/* <Route path='/pricing' component={PricingTable}/> */}
       <Redirect to='/'/>
     </Switch>
   </BrowserRouter>
