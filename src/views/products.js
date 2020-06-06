@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Container, WeekBlock, Row, ColoredContainer, WhiteCell, ClassSection} from '../styles/layout';
-import {Button, Circle, LevelDescription, Tube} from '../styles/ui-components';
+import {Button, StyledPaymentForm} from '../styles/ui-components';
 import {Link} from 'react-router-dom';
 import Header from '../components/header';
 
@@ -132,6 +132,16 @@ class ProductsTable extends Component {
           </WeekBlock>
         })
       }   
+      </Container>
+      <ColoredContainer secondary>
+        <h1>Reviews</h1>
+      </ColoredContainer>
+      <Container>
+        <StyledPaymentForm 
+          src="https://www.cognitoforms.com/AgaveCommerce/ClassSignUp"
+          scrolling="no"
+          frameBorder="0"
+        />
       </Container>
       </>
     );
